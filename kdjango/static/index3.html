@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="no-js ie9 ie"> <![endif]-->
+<!--[if IE 10]>   <html lang="en" class="no-js ie10 ie"> <![endif]-->
+<html class='no-js' lang='en'>
+
+<!-- Mirrored from carterdigital.com.au/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jun 2016 02:39:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script src='jquery.js'></script>
+
+
+	<script type="text/javascript" src="jquery.leanModal.min.js"></script>
+	
+	<link rel="stylesheet" href="styles.css" type='text/css'>
+	<link rel="stylesheet" href="{% static 'styles.css' %}">
+
+
+	<script type="text/javascript">
+
+
+$(document).ready(function(){
+	
+	$("#saleD").click(function(){
+				
+				var nob = $("li[class^=tab-link]");
+				var tab_id = nob[3];
+
+				var Addressarray = $(nob[0]);
+				var houseTarray = $(nob[1]);
+				var SaleTarray = $(nob[2]);
+				var SaleDarray = $(nob[3]);
+
+
+
+				var nobcontent = $(tab_id).attr("data-tab");
+
+
+				$('ul.tabs li').removeClass('current');
+				$('.tab-content').removeClass('current');
+
+
+				SaleDarray.addClass('current');
+				$("#"+$(tab_id).attr("data-tab")).addClass('current');
+
+
+	})
+
+	$("#saleT").click(function(){
+				
+				var nob = $("li[class^=tab-link]");
+				var tab_id = nob[2];
+
+				var Addressarray = $(nob[0]);
+				var houseTarray = $(nob[1]);
+				var SaleTarray = $(nob[2]);
+				var SaleDarray = $(nob[3]);
+
+
+
+				var nobcontent = $(tab_id).attr("data-tab");
+
+
+				$('ul.tabs li').removeClass('current');
+				$('.tab-content').removeClass('current');
+
+
+				SaleTarray.addClass('current');
+				$("#"+$(tab_id).attr("data-tab")).addClass('current');
+
+
+	})
+
+	$("#houseT").click(function(){
+				
+				var nob = $("li[class^=tab-link]");
+				var tab_id = nob[1];
+
+				var Addressarray = $(nob[0]);
+				var houseTarray = $(nob[1]);
+				var SaleTarray = $(nob[2]);
+				var SaleDarray = $(nob[3]);
+
+
+
+				var nobcontent = $(tab_id).attr("data-tab");
+
+
+				$('ul.tabs li').removeClass('current');
+				$('.tab-content').removeClass('current');
+
+
+				houseTarray.addClass('current');
+				$("#"+$(tab_id).attr("data-tab")).addClass('current');
+
+
+	})
+
+	$("#address").click(function(){
+				
+				var nob = $("li[class^=tab-link]");
+				var tab_id = nob[0];
+
+				var Addressarray = $(nob[0]);
+				var houseTarray = $(nob[1]);
+				var SaleTarray = $(nob[2]);
+				var SaleDarray = $(nob[3]);
+
+
+
+				var nobcontent = $(tab_id).attr("data-tab");
+
+
+				$('ul.tabs li').removeClass('current');
+				$('.tab-content').removeClass('current');
+
+
+				Addressarray.addClass('current');
+				$("#"+$(tab_id).attr("data-tab")).addClass('current');
+
+
+	})
+
+	
+})
+
+	$(document).ready(function(){
+	
+	$('.nextButton').click(function(){
+		var i = 0;i++;
+		var nob = $("li[class^=tab-link]");
+		var tab_id = nob[i];
+		var nobcontent = $(tab_id).attr("data-tab");
+		console.log(nobcontent);
+		console.log(i);
+		
+		
+	//	console.log(nob[0]);
+		
+		
+		
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(nob[i]).addClass('current');
+		$("#"+nobcontent).addClass('current');
+		//	console.log(tab_id);
+	
+	
+	
+	})
+	
+
+})
+var i = 1;
+
+function TabTransition(){
+	
+		i++;
+		console.log(i);
+		//var nob = $("[class^=innerTab]");
+		//var tab_id = nob[i];
+		//console.log(nob)
+
+		var nob = $("li[class^=tab-link]");
+		var tab_id = nob[i];
+		var nobcontent = $(tab_id).attr("data-tab");
+		var nobcontent = $(tab_id).attr("data-tab");
+		
+		
+		
+	//	console.log(nob[0]);
+		var nut=document.getElementById("autocomplete").innerhtml='';
+		document.getElementById("autocomplete").innerhtml='';
+		
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(nob[i]).addClass('current');
+		$("#"+nobcontent).addClass('current');console.log(nobcontent);
+		
+		if (i==4) {
+		
+		
+        var my_text = prompt('Thanks for registering your interest with Klaus. We are still in BETA mode but will get in touch soon! Please enter your email here');
+        console.log(my_text);console.log("hi");
+        alert('Thankyou someone from Klaus will get in touch soon');
+//$("[class^=autocomplete]".'property value')='';
+
+var mess = $("[class^=autocomplete]");
+$("[class^=autocomplete]").blur();    
+setTimeout(function(){
+ $("[class^=autocomplete]").val('')
+ $("[class^=autocomplete]").focus();},10)
+
+console.log(mess);
+
+  i=0;
+  console.log(i);
+  $(nob[i]).addClass('current');
+  var tab_id = nob[i];
+  var nobcontent = $(tab_id).attr("data-tab");
+		$("#"+nobcontent).addClass('current');console.log(nobcontent);
+
+	};
+	}
+	
+
+
+
+
+</script>
+
+
+
+
+	<meta charset="utf-8" />
+
+	<title>Klaus | Your Home Sell Companion</title>
+	<meta name="keywords" content="ux, digital, cx, user experience, customer experience, service design, strategy, sydney, perth, web, development, eCommerce" />
+    <meta name="description" content="We are Carter, a usability, service design & user experience agency, creating ideas and products that transform and grow your business." />
+
+    <meta name="eecache" content="376" />
+
+    <meta name="author" content="Carter Digital - http://www.carterdigital.com.au"/>
+    <meta name="robots" content="INDEX,FOLLOW"/>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
+
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+	<link rel="apple-touch-icon" href="images/icon-120%402x.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icon-76%401x.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icon-120%402x.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icon-152%402x.png">
+
+	
+    <!--[if IE]>
+	<link rel="stylesheet" href="/css/ie.css" type="text/css" />
+	<![endif]-->
+
+	<!-- <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script> -->
+	<!--<script type="text/javascript" src="/js/jquery.validate.js"></script>-->
+	<!--<script type="text/javascript" src="/js/jquery.color.js"></script>-->
+	<!--<script type="text/javascript" src="js/jquery.animation.easing.js"></script>-->
+	<!--<script type="text/javascript" src="/js/jquery.wiggle.js"></script>-->
+	
+	 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+	</head>
+	<body>
+
+
+
+<div class="container">
+
+	<ul class="tabs" >
+		<li class="tab-link current" data-tab="tab-1" id="address">Address</li>
+		<li class="tab-link" data-tab="tab-2" id="houseT"> House Type</li>
+		<li class="tab-link" data-tab="tab-3" id="saleT">Sale Type</li>
+		<li class="tab-link" data-tab="tab-4" id="saleD">Sale Duration</li>
+	</ul>
+
+	<div id="tab-1" class="tab-content current">
+		
+
+	 <div id="locationField">
+      <input id="autocomplete" class ="autocomplete" placeholder="Enter your address"
+             onFocus="geolocate()" type="text"></input><br/><br/><br/><br/>
+	
+    </div>
+    <button class="nextButton" style="font-size="50px"">Next</button>
+	</div>
+	<div id="tab-2" class="tab-content".>
+	<div id="innerTabHseType" class="innerTab" onClick="TabTransition();">
+		
+	
+	<nav>
+      <a class="box demo-1"><i class="fa fa-hand-o-right"></i><span>House</span></a><br/>
+      <a class="box demo-1"><i class="fa fa-hand-o-up"></i><span>Townhouse</span></a><br/>
+      <a class="box demo-1"><i class="fa fa-hand-o-left"></i></i> <span>Unit</span></a><br/>
+      <a class="box demo-1"><i class="fa fa-thumbs-o-up"></i> <span>Section</span></a></br>
+       <a class="box demo-1"><i class="fa fa-thumbs-o-up"></i> <span>Lifestyle Dwelling</span></a></br>
+</nav>
+	</div>
+	
+
+	</div>
+	<div id="tab-3" class="tab-content">
+		<div id="innerTabSleType" class="innerTab" onClick="TabTransition();">
+	
+	<nav>
+      <a class="box demo-1"> <i class="fa fa-hand-o-right"></i> <span>Auction<br/></span></a>
+      <a class="box demo-1"> <i class="fa fa-hand-o-up"></i> <span>Tender<br/></span></a>
+      <a class="box demo-1"> <i class="fa fa-hand-o-left"></i>  </i> <span>Price By Negotiation<br/></span></a>
+      <a class="box demo-1">  <i class="fa fa-thumbs-o-up"></i> <span>Enquiries Over</br></span></a>
+       <a class="box demo-1">  <i class="fa fa-thumbs-o-up"></i> <span>Tender Closing</br></span></a>
+       <a class="box demo-1">  <i class="fa fa-thumbs-o-up"></i> <span>Deadline Sale</br></span></a>
+</nav>
+
+</div>
+
+	</div>
+
+	<div id="tab-4" class="tab-content">
+		<div id="innerTabDuration" class="innerTab" onClick="TabTransition();">
+	<nav>
+      <a class="box demo-1"> <i class="fa fa-hand-o-right"></i> <span>21 days<br/></span></a>
+      <a class="box demo-1"> <i class="fa fa-hand-o-up"></i> <span>28 days<br/></span></a>
+      <a class="box demo-1"> <i class="fa fa-hand-o-left"></i>  </i> <span>35 days<br/></span></a>
+      <a class="box demo-1">  <i class="fa fa-thumbs-o-up"></i> <span>42 days</br></span></a>
+       <a class="box demo-1">  <i class="fa fa-thumbs-o-up"></i> <span>56 days</br></span></a>
+</nav>
+	</div>
+	<br/>
+	<br/>
+	
+	<button id="button" class="registerButton"><a href="http://ec2-52-42-18-94.us-west-2.compute.amazonaws.com/Klaus/carterdigital.com.au/dash.html"> Proceed to dashboard</a></button>
+	</div>
+
+</div>
+
+
+
+</body>

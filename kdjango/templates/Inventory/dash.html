@@ -1,0 +1,331 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="no-js ie9 ie"> <![endif]-->
+<!--[if IE 10]>   <html lang="en" class="no-js ie10 ie"> <![endif]-->
+<html class='no-js' lang='en'>
+
+<!-- Mirrored from carterdigital.com.au/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jun 2016 02:39:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script src='jquery.js'></script>
+	<script type="text/javascript">
+
+
+</script>
+
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+
+
+
+	<meta charset="utf-8" />
+
+	<title>Klaus | Your Home Sell Companion</title>
+	<meta name="keywords" content="ux, digital, cx, user experience, customer experience, service design, strategy, sydney, perth, web, development, eCommerce" />
+    <meta name="description" content="We are Carter, a usability, service design & user experience agency, creating ideas and products that transform and grow your business." />
+
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
+
+	<link rel="apple-touch-icon" href="images/icon-120%402x.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icon-76%401x.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icon-120%402x.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icon-152%402x.png">
+
+	
+    <!--[if IE]>
+	<link rel="stylesheet" href="/css/ie.css" type="text/css" />
+	<![endif]-->
+
+	<!-- <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script> -->
+	<!--<script type="text/javascript" src="/js/jquery.validate.js"></script>-->
+	<!--<script type="text/javascript" src="/js/jquery.color.js"></script>-->
+	<!--<script type="text/javascript" src="js/jquery.animation.easing.js"></script>-->
+	<!--<script type="text/javascript" src="/js/jquery.wiggle.js"></script>-->
+	
+	 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+	
+ 
+
+</head>
+<body>
+
+	<div class="container" style="margin-left:2%;">
+		
+		<h3 id="hero" style="float:left;">
+			<span class="hero_crop" >
+				<a href="{% url 'index' %}"><img src="{% static 'klogo.jpg' %}"  width="100"></img></a>
+			</span>
+		</h3>
+		<div class="lines"></div>
+		<div class="lines2"></div>
+	
+</div>
+
+
+<h3 style="float:right;">
+		
+
+    <p style="font-family:sans-serif;font-size:2em; margin-bottom:0px; float:left;">
+      {% block content %} 
+       
+ {{ propTable.username }}
+
+        {% endblock %}
+</p>
+
+       
+
+
+        
+			<span class="hero_crop">
+				<img src="{% static 'user.png' %}"  width="50" >
+			</span>
+		</h3>
+
+
+<div class="section_heading" style="margin:auto;float:center; padding-top:1%;margin-top:1%;">
+			<div class="inner" style="margin-left:0px; padding-left:0px;">
+				
+		<p style="font-family:sans-serif;font-size:3em; margin-bottom:0px;">Dashboard</p>
+			</div>
+		</div>
+	
+
+
+
+<div class="container">
+
+	<ul class="tabs" style="padding-top:1%; padding-left:25%" >
+		<li class="tab-link current" data-tab="tab-1">Event Log</li>
+		<li id="#property">Property</li>
+		<li id="#services">Services</li>
+		<li id="#marketing">Marketing</li>
+		<li id="#statistics">Statistics</li>
+    <a href="{% url 'negotiation' %}"><li id="#statistics">Negotiation Station</li></a>
+		
+	</ul>
+</div>
+<div id="eventLog">
+<div class="progressBar">
+<p style="font-size:2em;font-family:sans-serif; margin-left:3%;margin-top:0%;
+margin-bottom:0px;">Listing Progress Bar</p></br>
+
+<ul >
+	</br>
+	<li style="list-style-type: circle; margin-left:8%; float:left;">
+	Lawyer Engaged 
+	</li>
+  <img id = 'chkboxLawyer' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:2%; padding-right:4%;">
+</img>
+</br>
+</br>
+</br>
+
+
+	<li style="list-style-type: circle; margin-left:8%; float:left; ">
+	TradeMe Advert 
+</br>Listing
+	</li><img id = 'chkboxTradeMe' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:6%; padding-right:4%;"></img>
+  </br>
+  </br>
+  </br>
+</br>
+  </br>
+  
+  <li style="list-style-type: circle; margin-left:8%; float:left;">
+  Open Home </br>
+  Host Assigned 
+  </li>
+  <img id = 'chkboxOpenHme' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:6%; padding-right:4%;"></img>
+
+  
+ </br>
+  </br>
+  </br>
+  </br>
+  
+  </br>
+  </br>
+
+  <li style="list-style-type: circle; margin-left:8%; float:left;">
+  Photograghy </br>
+  (Open2View) 
+  </li>
+  <img id = 'chkboxPhtghpy' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:6%; padding-right:4%;"></img>
+  
+  </br>
+  </br>
+   </br>
+  </br>
+</br>
+
+  <li style="list-style-type: circle; margin-left:8%; float:left;">
+  Picket Sale Sign </br>
+   
+  </li>
+  <img id = 'chkboxPcketsalesign' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:2%; padding-right:4%;"></img>
+
+
+</ul>
+
+</div>
+<div class="calendar">
+<ul >
+	<li style="
+			margin-left:0%; margin-right:0%;">
+		<p style="font-family:sans-serif;text-align:center;">Calendar</p>
+
+	</li> 
+
+</ul>
+<div class="container">
+<div id="calendar"></div>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="{% static 'availability-calendar.js' %}"></script>
+<script>
+var unavailableDates = [
+{start: '2015-08-31', end: '2015-09-05'},
+    {start: '2015-09-11', end: '2015-09-15'},
+    {start: '2015-09-15', end: '2015-09-23'},
+    {start: '2015-10-01', end: '2015-10-07'}
+];
+
+$('#calendar').availabilityCalendar(unavailableDates);
+</script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+
+<script>window.jQuery || document.write('<script src="{% static 'jquery.js' %}"><\/script>')</script>
+
+
+
+
+
+  <script type="text/javascript">
+  var checkLawyer = "{{ listTask1.lawyerRequired }}";
+  var checkTrademe = "{{ listTask1.tradeMeListing }}";
+  var checkHost = "{{ listTask1.hostAssigned }}";
+  var checkPhotos = "{{ listTask1.photosTaken }}";
+  var checkOpenHome = "{{ listTask1.checkOpenHome }}";
+  var checkYardSign = "{{ listTask1.yardSaleSign }}";
+
+ 
+
+  $(document).ready(function(){
+    if(checkLawyer == 'True'){
+      $('#chkboxLawyer').show();
+    }
+
+      
+    else{
+      $('#chkboxLawyer').hide();
+
+    }
+  })
+
+    $(document).ready(function(){
+    if(checkTrademe == 'True'){
+      $('#chkboxTradeMe').show();
+    }
+      
+    else{
+      $('#chkboxTradeMe').hide();
+
+    }
+    })
+
+    $(document).ready(function(){
+    if(checkPhotos == "True"){
+      $('#chkboxOpenHme').show();
+    }
+      
+    else{
+      $('#chkboxOpenHme').hide();
+
+    }
+    })
+
+    $(document).ready(function(){
+    if(checkPhotos == "True"){
+      $('#chkboxPhtghpy').show();
+    }
+      
+    else{
+      $('#chkboxPhtghpy').hide();
+
+    }
+    })
+
+    $(document).ready(function(){
+    if(checkYardSign == "True"){
+      $('#chkboxPcketsalesign').show();
+    }
+      
+    else{
+      $('#chkboxPcketsalesign').hide();
+
+    }
+    })
+
+    $(document).ready(function(){
+    if(checkHost == "True"){
+      $('#chkboxOpenHme').show();
+    }
+      
+    else{
+      $('#chkboxOpenHme').hide();
+
+    }
+    })
+
+
+
+  </script>
+</div>
+
+<div class="listEventLog">
+<ul class="logContainer" >
+	
+		<h2 class="LEL" style="color: #222;margin-top:0px; margin-bottom:10px;font-family:sans-serif; font-size:2.2em;">News Feed:</h2>
+	
+		<li style="font-size:1.5em;"><u>{{ eventLog1.Date }}</u>
+       
+ 
+        </br> {{ eventLog1.eventDetail }}</li>
+		<li style="font-size:1.5em;"><u>{{ eventLog2.Date }}</u></br> {{ eventLog2.eventDetail }}</li>
+		<li style="font-size:1.5em;"><u>{{ eventLog3.Date }}</u></br> {{ eventLog3.eventDetail }}</li>
+		<li style="font-size:1.5em;"><u>{{ eventLog4.Date }}</u></br> {{ eventLog4.eventDetail }}</li>
+
+</ul>
+
+</div>
+
+
+</div>
+</body>
+
+
+</html>

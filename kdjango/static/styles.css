@@ -1,0 +1,680 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}
+
+body{line-height:1;color:black;background:white}
+ol,ul{list-style:none}
+
+table{border-collapse:separate;border-spacing:0;vertical-align:middle}
+
+caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
+
+q,blockquote{quotes:"" ""}
+
+q:before,q:after,blockquote:before,blockquote:after{content:""}
+
+a img{border:none}body{background:#fbfbfb;color:#333333;min-width:1160px}
+
+
+.container{width:1160px;margin:0 auto}
+
+#offer1:hover{
+	background: #E5E5E5 !important;
+	background-image: linear-gradient(to bottom, #EEE, #D6D6D6) !important;
+}
+
+#offer2:hover{
+	background: #E5E5E5 !important;
+	background-image: linear-gradient(to bottom, #EEE, #D6D6D6) !important;
+}
+
+.calendar{width:50%;margin:0 auto; margin-top: 3%;
+	font-family:sans-serif;font-size:1.2em;
+background: #F7F7F7;  border-radius: 25px;color: #222;height: 330px;
+float:center;padding-top:2%; padding-bottom: 2%;}
+
+
+.negotiationStation{width:50%;margin:0 auto; margin-top: 3%;
+	font-family:sans-serif;font-size:1.2em;
+background: #F7F7F7;  border-radius: 25px;color: #222;height:600px;
+float:center;padding-top:2%; padding-bottom: 2%;}
+
+
+.listEventLog{width:50%;margin:0 auto; float:center; 
+	border: 1px black solid;height: 235px;padding-top:1%; margin-top: 5%;}
+
+
+
+.listEventLog > .logContainer{margin-left: 0.8%; color:#CCCCCC;}
+
+.progressBar{font-family:sans-serif; font-size:1.2em;width:20%;background: #F0F0F0;
+			color: #222; height:700px; margin: 0 auto; margin-top:0%;padding: 0;float:right;}
+
+#custom_header{background:#494949 url(StyleHome.jpg) center top;background-size:cover;overflow:visible}
+
+#header_top{width:100%}#header_top p{text-align:right;font-size:1.4em;color:#fff;margin:0}
+
+#header_top p a{color:#fff}#header{width:100%;padding-top:5px;height:440px}
+
+
+#header .container{position:relative}
+
+
+#header h3.logo{margin:0;padding:0; margin-top:80px;padding-top:80px;position:relative;z-index:101;width:77px}
+
+#header h3.logo a,#header h3.logo a img{display:block;margin-top: 60px; padding-top: 60px;}
+
+#header 
+
+.lines{width:300px;height:310px;
+	background:url(carterdigital.com.au/images/layout/hero-lines.png) -450px 0;
+	position:absolute;z-index:1;left:470px;top:130px}
+
+#header .lines2{width:160px;height:130px;
+	background:url(carterdigital.com.au/images/layout/hero-lines.png) -300px -750px;
+	position:absolute;z-index:100;top:440px;left:320px}
+
+#header #hero{z-index:2;position:relative;float:left;margin:0}
+
+#header #hero .hero_crop{position:relative;overflow:hidden;width:100%;
+	height:240px;display:block}
+
+#header .moustache{width:65px;height:30px;
+	background:url(carterdigital.com.au/images/layout/digital-httpsters.png)
+	 -125px -240px no-repeat;position:absolute;top:240px;left:125px}
+
+#site_of_the_day{width:69px;height:105px;
+	 	background:url(carterdigital.com.au/images/awards/awwwards_siteoftheday_b_right.png);
+	 	position:absolute;top:170px;right:0px;display:block}
+
+
+.nav{position:static;overflow:hidden;left:0;width:100%;min-width:1160px;}
+
+.nav ul{position:static;float:right;padding:28px 0 0;display:block;
+	margin:0; margin-top: 33%}
+
+.nav ul li{float:left;display:block;margin:0;padding:0;margin-left:25px}
+
+.nav ul li a{color:#fff;font-weight:bold;text-transform:uppercase;
+	display:block;font-size:24px;line-height:21px;height:21px;
+	text-decoration:none}
+
+	.nav ul li a:hover{background:url(carterdigital.com.au/images/layout/nav-a-hover.png) 
+		50% 0 no-repeat}
+
+#fake_nav{position:static}
+
+#nav{background:#3a3a3a url(carterdigital.com.au/images/layout/nav.png);padding:15px 0 14px;
+	color:#cccccc;z-index:99;height:21px}
+
+#nav h2{color:#f1f1f1;font-size:18px;line-height:50px;padding:0;margin:0}
+
+#nav ul{padding:0;opacity:0}
+
+#nav ul li a{color:#cccccc}
+
+#nav_space{height:50px;width:100%;margin-bottom:15px}
+
+#nav h3.logo{position:absolute;top:0;padding:0;margin:0;opacity:0}
+
+#nav h2{position:absolute;top:0}
+
+.section_mask{position:relative;overflow:hidden;display:block;width:100%}
+
+.section{border-bottom:#f8f8f8 solid 10px;width:1160px;padding:50px 40px;margin-left:-40px;position:relative}
+
+.section.last{border:none}
+
+.section_heading{margin-left:-60px;position:relative;border-top:#e6e6e6 solid 1px;border-bottom:#fff solid 1px;margin-bottom:45px;width:460px}
+
+.section_heading .inner{border-top:#fff solid 1px;border-bottom:#e6e6e6 solid 1px;padding:18px 0 22px;padding-left:60px}.section_heading .inner h1,.section_heading .inner h2{padding:0;margin:0;width:1160px}
+
+#folio{padding-top:25px}#folio_projects{width:1165px;padding-top:0}#folio_projects .project{float:left;margin:0 5px 5px 0;position:relative}
+
+#folio_projects .project .loading-animation{position:absolute;top:0;left:0;width:100%;height:100%;background-color:#ebebeb;background-color:rgba(235,235,235,0.85);background-position:50% 50%;background-repeat:no-repeat;background-image:url(carterdigital.com.au/images/layout/loading-moustache.gif);display:none;z-index:5}
+
+#folio_projects .project.loading .loading-animation{display:block}
+
+#folio_projects .project .hover{position:absolute;top:0;left:0;width:100%;height:100%;background-position:0 0;background-repeat:no-repeat;z-index:-1}
+
+#folio_projects .project .hover .caption{position:absolute;bottom:10px;left:10px;width:188px;padding:7px 10px;background:#000;background:rgba(0,0,0,0.75);color:#fff;border-radius:3px}
+
+#folio_projects .project .hover .caption h3{margin:0;padding:0;font-weight:bold;text-shadow:rgba(0,0,0,0.5) 0 1px 0;line-height:1.1em}
+
+#folio_projects .project .hover .caption p{color:#ccc;font-size:13px;line-height:15px;margin:0;text-shadow:rgba(0,0,0,0.5) 0 1px 0}#folio_projects .project img{z-index:1;display:block}
+
+#folio_single{width:100%;position:relative;overflow:hidden;height:0px;background:#fff}#folio_single.active{height:auto}#folio_single .container{position:relative}
+
+#folio_single .content{width:260px;position:relative;float:left;padding-bottom:35px}#folio_single .images{width:800px;float:left;margin-left:70px;display:inline}
+
+#folio_single .quote{margin-left:-60px;position:relative;border-top:#e6e6e6 solid 1px;border-bottom:#fff solid 1px;margin-bottom:25px;width:320}
+
+#folio_single .quote .line{width:63px;height:64px;position:absolute;left:0;top:18px;margin-left:-30px;background:url(carterdigital.com.au/images/layout/quote.png) 0 0 no-repeat}
+
+#folio_single .quote .inner{border-top:#fff solid 1px;border-bottom:#e6e6e6 solid 1px;padding:18px 0 22px;padding-left:60px}
+
+#folio_single .quote blockquote{font-family:museo-slab, serif;font-weight:100;font-size:2.1em;line-height:1.4em}#folio_single .quote .inner p{margin-top:1em;font-size:1.2em;color:#df3528}
+
+#folio_single .client_meta h3{margin-top:15px}#folio_single .images .image{margin-bottom:0px;line-height:0}
+
+#folio_single #folio_nav{position:absolute;height:260px;padding-top:50px;width:71px;z-index:5;top:0;right:50%;margin-right:-640px}
+
+#folio_single #folio_nav a{display:block;position:relative;width:71px;height:71px}
+
+#folio_single #folio_nav a .outer{display:block;position:absolute;top:50%;left:50%;margin-top:-35px;margin-left:-35px;width:71px;height:71px;border-radius:40px;background:rgba(153,153,153,0.1);z-index:4}
+
+#folio_single #folio_nav a .inner{display:block;position:absolute;overflow:hidden;top:50%;left:50%;width:41px;height:41px;margin-left:-20px;margin-top:-20px;background:#e1e1e1 url(carterdigital.com.au/images/layout/icons.png) 50% -500px;border-radius:20px;z-index:5}
+
+#folio_single #folio_nav a#folio_close{margin-bottom:20px}#folio_single #folio_nav a#folio_prev{margin-top:-10px}
+
+#folio_single #folio_nav a#folio_close:hover .inner{background-color:#494949}#folio_single #folio_nav a#folio_close:active .inner{background-position:50% -550px}
+
+#folio_single #folio_nav a#folio_next:hover .inner{background-color:#494949}#folio_single #folio_nav a#folio_next:active .inner{background-position:50% -750px}
+
+#folio_single #folio_nav a#folio_next.loading .inner{background:#494949 url(carterdigital.com.au/images/layout/loading.gif) 50% 50% no-repeat}
+
+#folio_single #folio_nav a#folio_prev.loading .inner{background:#494949 url(carterdigital.com.au/images/layout/loading.gif) 50% 50% no-repeat}
+
+.loading_temp{background-image:#494949 url(carterdigital.com.au/images/layout/loading.gif) 50% 50% no-repeat;display:none}#temp_project{position:absolute;opacity:0;overflow:hidden}
+
+#ajax_response{position:relative;width:100%}#ajax_response .project{position:absolute;width:100%;padding:35px 0;z-index:2;background:#fff;box-shadow:#ccc -1px 0 0, #ccc 1px 0 0}
+
+#ajax_response .project.left{left:100%}#ajax_response .project.right{left:-100%}#ajax_response .project.last_active{z-index:1}#ajax_response .content a{text-decoration:underline}
+
+#ajax_response .content a:hover{color:#df3528}#clients{width:1160px;padding:50px 40px}#clients .client{width:232px;height:115px;float:left}
+
+#clients .client a{display:block;width:230px;height:115px;background-position:0 0;background-repeat:no-repeat}#clients .client a img{display:block;margin:0 auto}
+
+#awards{width:1160px;padding:0 40px 50px 40px}#awards .award{width:193px;height:115px;float:left}
+
+#awards .award a{display:block;width:193px;height:115px;background-position:0 0;background-repeat:no-repeat}#awards .award a img{width:193px;height:auto;display:block;margin:0 auto}
+
+#about{padding-bottom:0;border:0}.col_6{width:560px;float:left;padding-right:40px}.last{padding-right:0 !important}.col_3{width:260px;padding-right:40px;float:left}
+
+#slider{position:relative;margin:40px 0 0}#slider .mask{position:relative;overflow:hidden;width:1160px;height:400px}#slider .mask .slides{width:9999px;position:relative;overflow:hidden}
+
+#slider .mask .slides .slide{float:left}#slider .mask .slides .slide img{display:block}
+
+#slider #slider_prev,#slider #slider_next{display:block;position:absolute;width:72px;height:72px;z-index:3;cursor:pointer;top:50%;margin-top:-36px}
+
+#slider #slider_prev{left:0;margin-left:-36px}#slider #slider_next{right:0;margin-right:-36px}
+
+#slider #slider_prev .outer,#slider #slider_next .outer{display:block;width:72px;height:72px;top:50%;left:50%;margin-top:-36px;margin-left:-36px;border-radius:36px;background:rgba(153,153,153,0.1);position:absolute;overflow:hidden}
+
+#slider #slider_prev .inner,#slider #slider_next .inner{display:block;position:absolute;overflow:hidden;top:50%;left:50%;width:43px;height:43px;margin-left:-21px;margin-top:-21px;background:#e1e1e1 url(carterdigital.com.au/images/layout/icons.png) 50% -600px;border-radius:21px;z-index:5}
+
+#slider #slider_next .inner{background-position:50% -700px}#slider #slider_prev:hover .inner,#slider #slider_next:hover .inner{background-color:#494949}
+
+#slider #slider_prev:active .inner{background-position:50% -650px}#slider #slider_next:active .inner{background-position:50% -750px}
+
+#services .service{width:300px;float:left;padding-right:130px;position:relative;overflow:visible !important}
+
+#services .circle_holder{width:320px;height:340px}
+
+#services .circle{top:0;left:0;width:320px;height:320px;position:relative;overflow:hidden;margin-left:-20px;background:#eeeeee;border-radius:160px}
+
+#services .circle .inner{top:0;left:0;width:260px;height:260px;position:relative;overflow:hidden;margin:30px 0 0 30px;background:#fff url(carterdigital.com.au/images/layout/service-bg.png);border-radius:140px;text-align:center;color:#fff}
+
+#services .icon{width:50px;height:50px;margin:55px auto 2px;background:url(carterdigital.com.au/images/layout/icons.png) 50% 0 no-repeat}
+
+#services .circle .inner h2{margin:0 0 12px;text-transform:uppercase}
+
+#services .circle .inner p{font-size:1.8em}
+
+#services .icon.discover{background-position:50% 0}
+
+#services .service:hover .icon.discover{background-position:50% -50px}
+
+#services .icon.design{background-position:50% -100px}
+
+#services .service:hover .icon.design{background-position:50% -150px}
+
+services .icon.deliver{background-position:50% -200px}
+
+#services .service:hover .icon.deliver{background-position:50% -250px}
+
+#services .circle .icon.deliver.lift_off{-webkit-animation:rocketAnimation 4s 1 ease;-moz-animation:rocketAnimation 4s 1 ease}
+
+#services .circle .icon.deliver.in_sky{-webkit-transform:translate(0, -200px);-moz-transform:translate(0, -200px)}
+
+#services .circle .icon.deliver.fall_down{-webkit-animation:fallrocketAnimation 1s 1 ease;-moz-animation:fallrocketAnimation 1s 1 ease}@-webkit-keyframes rocketAnimation{0%{-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0)}2%{-webkit-transform:rotate(-5deg) scale(1) skew(0deg) translate(0)}4%{-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0)}6%{-webkit-transform:rotate(5deg) scale(1) skew(0deg) translate(0)}8%{-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0)}10%{-webkit-transform:rotate(-5deg) scale(1) skew(0deg) translate(0)}12%{-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0)}14%{
+	-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0)}16%{-webkit-transform:rotate(-5deg) scale(1) skew(0deg) translate(0, 0px)}18%{-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0, -1px)}20%{-webkit-transform:rotate(5deg) scale(1) skew(0deg) translate(0, -2px)}22%{-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0, -3px)}24%{-webkit-transform:rotate(-5deg) scale(1) skew(0deg) translate(0, -5px)}26%{-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0, -7px)}100%{-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0, -200px)}}@-moz-keyframes rocketAnimation{0%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0px)}2%{-moz-transform:rotate(-5deg) scale(1) skew(0deg) translate(0)}4%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0)}6%{-moz-transform:rotate(5deg) scale(1) skew(0deg) translate(0)}8%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0)}10%{-moz-transform:rotate(-5deg) scale(1) skew(0deg) translate(0)}12%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0)}14%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0)}16%{-moz-transform:rotate(-5deg) scale(1) skew(0deg) translate(0, 0px)}18%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0, -1px)}20%{-moz-transform:rotate(5deg) scale(1) skew(0deg) translate(0, -2px)}22%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0, -3px)}24%{-moz-transform:rotate(-5deg) scale(1) skew(0deg) translate(0, -5px)}26%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0, -7px)}100%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0, -200px)}}@-webkit-keyframes fallrocketAnimation{0%{-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0, -200px)}50%{-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0, 0px)}75%{-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0, -20px)}100%{-webkit-transform:rotate(0deg) scale(1) skew(0deg) translate(0, 0px)}}@-moz-keyframes fallrocketAnimation{0%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0, -200px)}50%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0, 0px)}75%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0, -20px)}100%{-moz-transform:rotate(0deg) scale(1) skew(0deg) translate(0, 0px)}}
+
+#get_started_wrapper{width:100%;overflow:hidden}#get_started{padding:50px 0;margin-left:0}#get_started h2.hero{font-size:2.2em;text-align:center;position:relative;font-weight:400}#get_started .marker.right{left:auto;right:0;margin-left:0;margin-right:-60px}#get_started .section_heading{width:520px;margin-top:20px; font-family: sans-serif;}#get_started .section_heading.left{float:left}#get_started .section_heading.right{float:right;margin-left:0;margin-right:-60px}#get_started .section_heading.right .inner{padding-left:0;padding-right:60px}#get_started .section_heading.right .inner h2{text-align:right}#get_started .section_heading .inner h2{font-weight:100;font-size:2.2em;width:auto}#get_started a.download{width:100px;height:100px;position:relative;display:block;margin:0 auto;cursor:pointer}#get_started a.download .outer{width:100px;height:100px;background:#f6f6f6;border-radius:50px;display:block}#get_started a.download .inner{width:70px;height:70px;background:#f6f6f6 url(../images/layout/service-bg.png);border-radius:40px;position:absolute;top:50%;left:50%;margin-top:-35px;margin-left:-35px}#get_started a.download .icon{width:40px;height:40px;background:#494949 url(../images/layout/icons.png) 50% -296px;border-radius:20px;position:absolute;top:50%;left:50%;margin-top:-20px;margin-left:-20px}#footer{width:100%;background:#202020 url(carterdigital.com.au/images/layout/footer.png);color:#999999;padding:80px 0 170px}#footer p{font-size:1.4em}#footer .col_contact p{margin:0 0 0.5em}#footer p a{color:#999999}#footer h2{font-size:2.1em;font-weight:100;color:#fff}#footer strong{color:#fff}#footer .col_contact{width:400px;padding-right:100px;float:left}#footer .col_follow{width:160px;float:left;text-align:center}#footer .col_join{width:370px;padding-left:130px;float:left}
+
+.circle_button{height:50px;width:50px;display:block;cursor:pointer;text-indent:-9999px;margin:0 auto;margin-bottom:2px;position:relative}
+
+.circle_button .outer{display:block;width:50px;height:50px;top:50%;left:50%;margin-top:-25px;margin-left:-25px;border-radius:30px;background:rgba(204,204,204,0.25);position:absolute}
+
+.circle_button .inner{display:block;position:absolute;top:50%;left:50%;width:40px;height:40px;margin-left:-20px;margin-top:-20px;background:#f1f1f1 url(carterdigital.com.au/images/layout/icons.png) 50% -500px;border-radius:20px;z-index:5}
+
+.circle_button.twitter .inner{background:#f1f1f1 url(carterdigital.com.au/images/layout/icons.png) 50% -350px}
+
+.circle_button.facebook .inner{background:#f1f1f1 url(carterdigital.com.au/images/layout/icons.png) 50% -400px}.circle_button.linkedin .inner{background:#f1f1f1 url(carterdigital.com.au/images/layout/icons.png) 50% -450px}#footer .col_join form{display:block;position:relative;overflow:hidden;margin-bottom:10px}.inner{-moz-transition:background-color 300ms ease-in-out;-o-transition:background-color 300ms ease-in-out;-webkit-transition:background-color 300ms ease-in-out;transition:background-color 300ms ease-in-out}#footer .col_join form input[type="text"]{background:#323232;border:0 none;padding:0 10px;color:#999999;font-family:sans-serif;font-size:1.4em;line-height:1.2em;float:left;width:245px;outline:none;height:36px;vertical-align:middle}#footer .col_join form input[type="submit"]{background:#e5e5e5;font-size:1.6em;line-height:1em;padding:0 10px;float:left;font-family:museo-slab, serif;color:#494949;border:0 none;margin-left:10px;height:36px;vertical-align:middle;cursor:pointer}#footer .col_join form input[type="submit"]:hover{background:#d3d3d3}input[type="submit"]::-moz-focus-inner{border:0}p.meta{font-size:1.2em}p.meta a{font-weight:bold;color:#999999}.getStartedForm{position:fixed;width:100%;top:0;bottom:0;left:0;z-index:1000;right:0;height:100%;display:none}.getStartedForm.show{display:block}.getStartedForm .overlay{background:url('carterdigital.com.au/images/rgbapng/000000bf-5ff38.png?1429746399');background:rgba(0,0,0,0.75);top:0;bottom:0;left:0;z-index:0;right:0;position:absolute;width:100%;height:100%}.getStartedForm form{width:580px;top:50%;left:50%;margin-left:-290px;display:block;padding:20px 25px 30px;position:absolute;background:#202020 url(carterdigital.com.au/images/layout/footer.png);color:#999999;z-index:10}.getStartedForm h2{width:100%;display:block;font-size:2.1em;font-weight:100;color:#fff;font-family:museo-slab, serif;font-weight:100;line-height:1.14em;margin-bottom:10px}.getStartedForm p{width:100%;display:block;float:left;margin-top:8px;margin-bottom:0}.getStartedForm label{display:none}.getStartedForm input{background:#323232;border:0 none;padding:0 10px;color:#999999;font-family:sans-serif;font-size:1.4em;line-height:1.2em;float:left;width:440px;outline:none;height:36px;vertical-align:middle}.getStartedForm button{background:#e5e5e5;font-size:1.6em;line-height:1em;padding:0 10px;float:left;font-family:museo-slab, serif;color:#494949;border:0 none;margin-left:10px;height:36px;vertical-align:middle;cursor:pointer}.getStartedForm button:hover{background:#d3d3d3;color:#494949}#awwwards{position:absolute;top:165px;right:0px;z-index:555}#awwwards a{width:69px;height:105px;text-indent:-8000px;display:block;background:url(carterdigital.com.au/images/awards/awwwards_nominee_b_right.png) no-repeat;overflow:hidden}.ie body{overflow-x:scroll}.ie #services .circle{background:#FBFBFB url(carterdigital.com.au/images/layout/ie-services.png) 50% 50% no-repeat}.ie #services .circle .inner{background:transparent none !important}.ie #get_started a.download .outer{background:#FBFBFB url(carterdigital.com.au/images/layout/ie-download.png) 50% 50% no-repeat}.ie #get_started a.download .inner,.ie #get_started a.download .icon{display:none}.ie #folio_single #folio_nav .inner,.ie #folio_single #folio_nav .outer{display:none !important}.ie #folio_single #folio_nav a#folio_close{background:#fff url(carterdigital.com.au/images/layout/ie-close.png) 50% 50% no-repeat}.ie #folio_single #folio_nav a#folio_next{background:#fff url(carterdigital.com.au/images/layout/ie-next.png) 50% 50% no-repeat}.ie #folio_single #folio_nav a#folio_prev{background:#fff url(carterdigital.com.au/images/layout/ie-prev.png) 50% 50% no-repeat}.ie #footer .col_join form input[type="text"]{color:#999999;float:left;font-size:1.4em;height:36px;line-height:36px;width:225px}
+
+.ie #footer .circle_button span{display:none !important}
+
+.ie #footer .circle_button.twitter{background:transparent url(carterdigital.com.au/images/layout/ie-twitter.png) 50% 50% no-repeat}
+
+.ie #footer .circle_button.facebook{background:transparent url(carterdigital.com.au/images/layout/ie-facebook.png) 50% 50% no-repeat}
+
+.ie #footer .circle_button.linkedin{background:transparent url(carterdigital.com.au/images/layout/ie-linkedin.png) 50% 50% no-repeat}
+
+.clear{clear:both}
+
+body{font:62.5% Proxima, sans-serif;color:#333333;font-weight:300}
+
+@font-face{font-family:Proxima;
+	font-weight:400;src:url("fonts/ProximaNova-Light.otf")}
+
+@font-face{font-family:Proxima;font-weight:700;
+		src:url("fonts/ProximaNova-Bold.otf")}
+
+*::selection{background:#df3528;color:#fff}
+
+*::-moz-selection{background:#df3528;color:#fff}
+
+*::-webkit-selection{background:#df3528;color:#fff}
+
+h1,h2{font-family:museo-slab, serif;font-weight:100;font-size:2.8em;line-height:1.14em;margin-bottom:1em}
+
+h3{font-size:1.6em;line-height:1.75em;position:relative;font-weight:700;text-transform:uppercase;margin:1em 0 0.5em;}
+
+p,li{font-size:1.4em;line-height:1.6em}
+
+p{margin:0 0 1em}
+
+a{color:#333333;text-decoration:underline}
+
+a:hover{color:#df3528;text-decoration:none}
+
+span.marker{height:1px;width:40pax;display:block;position:absolute;left:0;margin-left:-60px;top:50%;margin-top:-1px;background:#fa9568}
+
+.right span.marker{left:auto;right:0;margin-left:0;margin-right:-60px}
+
+ul{display:block;padding:0;margin:0}
+
+ol{list-style:outside disc;padding-left:14px}
+
+.section li,.content li{display:block;background:url(carterdigital.com.au/images/layout/li.png) 0 10px no-repeat;padding-left:20px}
+
+table,tr,td,th{vertical-align:top}
+
+table{width:100%}
+
+form{display:block;position:relative}
+
+form .field{display:block;position:relative;padding-bottom:10px}
+
+
+form .field.error label.error{display:none !important}
+
+ul.tabs li:hover {
+	background: #E5E5E5 !important;
+	background-image: linear-gradient(to bottom, #EEE, #D6D6D6) !important;
+}
+
+
+
+	ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		ul.tabs li{
+			background: none;
+			color: #222;
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+		}
+
+		ul.tabs li.current{
+			background: #ededed;
+			color: #222;
+		}
+
+		.tab-content{
+			display: none;
+			background: #ededed;
+			padding: 15px;
+		}
+
+		.tab-content.current{
+			display: inherit;
+
+		}
+
+.tab-panels ul{
+	margin:0;
+	padding:0;
+}
+
+.tab-panels ul li{
+	list-style-type: none;
+	display: inline-block;
+	background: #999;
+	margin:0;
+	padding:3px 10px;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	font-weight: 200;
+	cursor: pointer;
+
+}
+
+
+
+
+
+/*add styles here*/
+#logo{
+	height:60px;
+	padding: 15px;
+	float: left;
+}
+
+#signupButton{
+	float: right;
+	height:40px;
+	padding: 25px 5px 10px 0px;
+}
+
+#homesBanImage{
+	height: 160px;
+	width: 100%;
+	margin: auto;
+	position: absolute;
+}
+
+#banner{
+	height: 160px;
+	padding-bottom: 0px;
+	width: 100%;
+	margin: auto;
+	display: inline-block;
+
+	position: relative;
+
+}
+#form{
+
+	border-radius: 5px;
+
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 70%;
+    margin:auto;
+}
+.nextButton{
+	font-size: 25px;
+
+
+}
+
+.registerButton{
+	font-size: 25px;
+
+
+}
+
+.innerTab{
+	font-size: 30px;
+	color: black;
+	line-height: 2em;
+}
+
+#saleLabel{
+	display:none;
+	width:33.3%;
+}
+
+#sale{
+	display:none;
+}
+
+#recommendations{
+
+	background: #A1B3C7;
+
+	border: 1px solid black;
+
+	height:300px;
+
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+#popupBoxOnePosition{
+				top: 100; left: 0; position: fixed; width: 100%; height: 120%;
+				background-color: rgba(0,0,0,0.7); display: none;
+			}
+		
+			.popupBoxWrapper{
+				width: 550px; margin: 50px auto; text-align: left;
+			}
+			.popupBoxContent{
+				background-color: #FFF; padding: 15px;
+			}
+
+			/**
+ * Calendar toolbar
+ */
+.availability-calendar-toolbar {
+	padding-bottom: 8px;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-left: 5%;
+}
+
+.availability-calendar-toolbar span:last-child {float: right;
+	margin-right: 10%; padding-bottom: 10px;}
+
+.availability-calendar-toolbar input {
+	padding: 7px 14px;
+	background: #F5F5F5;
+	background-image: linear-gradient(to bottom, #FFF, #E6E6E6);
+	border: 1px solid #BBB;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	font-weight: bold;
+	cursor: pointer;
+	outline: 0;
+}
+
+.availability-calendar-toolbar input:first-child {
+	margin-right: 1px;
+	padding: 8px 14px;
+	border-radius: 6px;
+}
+
+.availability-calendar-toolbar input:nth-child(2) {border-radius: 6px 0 0 6px}
+
+.availability-calendar-toolbar input:last-child {
+	margin-left: -1px;
+	border-radius: 0 6px 6px 0;
+}
+
+.availability-calendar-toolbar input:hover {
+	background: #E5E5E5;
+	background-image: linear-gradient(to bottom, #EEE, #D6D6D6);
+}
+
+.availability-calendar-toolbar input:active {
+	background: #D5D5D5;
+	background-image: linear-gradient(to bottom, #DDD, #C6C6C6);
+}
+
+
+/**
+ * Calendar table and cells
+ */
+.availability-calendar {
+	width: 45%;
+	background: #FFF;
+	table-layout: fixed;
+	border-collapse: collapse;
+	margin-left: 10%;
+	margin-top: 1%;
+}
+
+.availability-calendar th, .availability-calendar td {
+	border: 1px solid #DDD;
+	padding: 3px;
+}
+
+.availability-calendar td {
+	height: 25px;
+	vertical-align: top;
+	text-align: right;
+}
+
+.availability-calendar .ex-month {opacity: 0.4}
+.availability-calendar .unavailable {position: relative}
+
+.availability-calendar .unavailable div {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: -1px;
+	height: 30px;
+	background: #F88;
+	border-top: 1px solid #A33;
+	border-bottom: 1px solid #A33;
+}
+
+.availability-calendar .unavailable:last-child div {right: 0}
+
+.availability-calendar .unavailable .first {
+	left: 51%;
+	border-radius: 6px 0 0 6px;
+	border-left: 1px solid #A33;
+}
+
+.availability-calendar .unavailable .last {
+	right: 51%;
+	border-radius: 0 6px 6px 0;
+	border-right: 1px solid #A33;
+}
+
+  .box{
+  color: 'black';
+  padding: 10px;
+}
+ 
+.box:hover{
+  background: #fff;
+  color: 'black';
+}
+ 
+.demo-1 {
+  position: relative;
+}
+ 
+.demo-1:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+ 
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.2s;
+ 
+  -webkit-transition-property: top, left, right, bottom;
+  -moz-transition-property: top, left, right, bottom;
+  -ms-transition-property: top, left, right, bottom;
+  -o-transition-property: top, left, right, bottom;
+  transition-property: top, left, right, bottom;
+}
+ 
+.demo-1:hover:before, .demo-1:focus:before{
+  -webkit-transition-delay: .1s;
+  -moz-transition-delay: .1s;
+  -ms-transition-delay: .1s;
+  -o-transition-delay: .1s;
+  transition-delay: .1s; 
+ 
+  border: #fff solid 3px;
+  bottom: -7px;
+  left: -7px;
+  top: -7px;
+  right: -7px;
+}
+
+   input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+     /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

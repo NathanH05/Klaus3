@@ -1,0 +1,763 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="no-js ie9 ie"> <![endif]-->
+<!--[if IE 10]>   <html lang="en" class="no-js ie10 ie"> <![endif]-->
+<html class='no-js' lang='en'>
+
+<!-- Mirrored from carterdigital.com.au/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jun 2016 02:39:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script src='jquery.js'></script>
+
+
+	<script type="text/javascript" src="jquery.leanModal.min.js"></script>
+	
+	<link rel="stylesheet" href="styles.css" type='text/css'>
+	<link rel="stylesheet" href="{% static 'styles.css' %}">
+
+
+	<script type="text/javascript">
+
+
+$(document).ready(function(){
+	
+	$("#saleD").click(function(){
+				
+				var nob = $("li[class^=tab-link]");
+				var tab_id = nob[3];
+
+				var Addressarray = $(nob[0]);
+				var houseTarray = $(nob[1]);
+				var SaleTarray = $(nob[2]);
+				var SaleDarray = $(nob[3]);
+
+
+
+				var nobcontent = $(tab_id).attr("data-tab");
+
+
+				$('ul.tabs li').removeClass('current');
+				$('.tab-content').removeClass('current');
+
+
+				SaleDarray.addClass('current');
+				$("#"+$(tab_id).attr("data-tab")).addClass('current');
+
+
+	})
+
+	$("#saleT").click(function(){
+				
+				var nob = $("li[class^=tab-link]");
+				var tab_id = nob[2];
+
+				var Addressarray = $(nob[0]);
+				var houseTarray = $(nob[1]);
+				var SaleTarray = $(nob[2]);
+				var SaleDarray = $(nob[3]);
+
+
+
+				var nobcontent = $(tab_id).attr("data-tab");
+
+
+				$('ul.tabs li').removeClass('current');
+				$('.tab-content').removeClass('current');
+
+
+				SaleTarray.addClass('current');
+				$("#"+$(tab_id).attr("data-tab")).addClass('current');
+
+
+	})
+
+	$("#houseT").click(function(){
+				
+				var nob = $("li[class^=tab-link]");
+				var tab_id = nob[1];
+
+				var Addressarray = $(nob[0]);
+				var houseTarray = $(nob[1]);
+				var SaleTarray = $(nob[2]);
+				var SaleDarray = $(nob[3]);
+
+
+
+				var nobcontent = $(tab_id).attr("data-tab");
+
+
+				$('ul.tabs li').removeClass('current');
+				$('.tab-content').removeClass('current');
+
+
+				houseTarray.addClass('current');
+				$("#"+$(tab_id).attr("data-tab")).addClass('current');
+
+
+	})
+
+	$("#address").click(function(){
+				
+				var nob = $("li[class^=tab-link]");
+				var tab_id = nob[0];
+
+				var Addressarray = $(nob[0]);
+				var houseTarray = $(nob[1]);
+				var SaleTarray = $(nob[2]);
+				var SaleDarray = $(nob[3]);
+
+
+
+				var nobcontent = $(tab_id).attr("data-tab");
+
+
+				$('ul.tabs li').removeClass('current');
+				$('.tab-content').removeClass('current');
+
+
+				Addressarray.addClass('current');
+				$("#"+$(tab_id).attr("data-tab")).addClass('current');
+
+
+	})
+
+	
+})
+
+	$(document).ready(function(){
+	
+	$('.nextButton').click(function(){
+		var i = 0;i++;
+		var nob = $("li[class^=tab-link]");
+		var tab_id = nob[i];
+		var nobcontent = $(tab_id).attr("data-tab");
+		console.log(nobcontent);
+		console.log(i);
+		
+		
+	//	console.log(nob[0]);
+		
+		
+		
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(nob[i]).addClass('current');
+		$("#"+nobcontent).addClass('current');
+		//	console.log(tab_id);
+	
+	
+	
+	})
+	
+
+})
+var i = 1;
+
+function TabTransition(){
+	
+		i++;
+		console.log(i);
+		//var nob = $("[class^=innerTab]");
+		//var tab_id = nob[i];
+		//console.log(nob)
+
+		var nob = $("li[class^=tab-link]");
+		var tab_id = nob[i];
+		var nobcontent = $(tab_id).attr("data-tab");
+		var nobcontent = $(tab_id).attr("data-tab");
+		
+		
+		
+	//	console.log(nob[0]);
+		var nut=document.getElementById("autocomplete").innerhtml='';
+		document.getElementById("autocomplete").innerhtml='';
+		
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(nob[i]).addClass('current');
+		$("#"+nobcontent).addClass('current');console.log(nobcontent);
+		
+		if (i==4) {
+		
+		
+        var my_text = prompt('Thanks for registering your interest with Klaus. We are still in BETA mode but will get in touch soon! Please enter your email here');
+        console.log(my_text);console.log("hi");
+        alert('Thankyou someone from Klaus will get in touch soon');
+//$("[class^=autocomplete]".'property value')='';
+
+var mess = $("[class^=autocomplete]");
+$("[class^=autocomplete]").blur();    
+setTimeout(function(){
+ $("[class^=autocomplete]").val('')
+ $("[class^=autocomplete]").focus();},10)
+
+console.log(mess);
+
+  i=0;
+  console.log(i);
+  $(nob[i]).addClass('current');
+  var tab_id = nob[i];
+  var nobcontent = $(tab_id).attr("data-tab");
+		$("#"+nobcontent).addClass('current');console.log(nobcontent);
+
+	};
+	}
+	
+
+
+
+
+</script>
+
+
+
+
+	<meta charset="utf-8" />
+
+	<title>Klaus | Your Home Sell Companion</title>
+	<meta name="keywords" content="ux, digital, cx, user experience, customer experience, service design, strategy, sydney, perth, web, development, eCommerce" />
+    <meta name="description" content="We are Carter, a usability, service design & user experience agency, creating ideas and products that transform and grow your business." />
+
+    <meta name="eecache" content="376" />
+
+    <meta name="author" content="Carter Digital - http://www.carterdigital.com.au"/>
+    <meta name="robots" content="INDEX,FOLLOW"/>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
+
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+	<link rel="apple-touch-icon" href="images/icon-120%402x.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icon-76%401x.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icon-120%402x.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icon-152%402x.png">
+
+	
+    <!--[if IE]>
+	<link rel="stylesheet" href="/css/ie.css" type="text/css" />
+	<![endif]-->
+
+	<!-- <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script> -->
+	<!--<script type="text/javascript" src="/js/jquery.validate.js"></script>-->
+	<!--<script type="text/javascript" src="/js/jquery.color.js"></script>-->
+	<!--<script type="text/javascript" src="js/jquery.animation.easing.js"></script>-->
+	<!--<script type="text/javascript" src="/js/jquery.wiggle.js"></script>-->
+	
+	 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+	<style>
+  .box{
+  color: 'black';
+  padding: 10px;
+}
+ 
+.box:hover{
+  background: #fff;
+  color: 'black';
+}
+ 
+.demo-1 {
+  position: relative;
+}
+ 
+.demo-1:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+ 
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.2s;
+ 
+  -webkit-transition-property: top, left, right, bottom;
+  -moz-transition-property: top, left, right, bottom;
+  -ms-transition-property: top, left, right, bottom;
+  -o-transition-property: top, left, right, bottom;
+  transition-property: top, left, right, bottom;
+}
+ 
+.demo-1:hover:before, .demo-1:focus:before{
+  -webkit-transition-delay: .1s;
+  -moz-transition-delay: .1s;
+  -ms-transition-delay: .1s;
+  -o-transition-delay: .1s;
+  transition-delay: .1s; 
+ 
+  border: #fff solid 3px;
+  bottom: -7px;
+  left: -7px;
+  top: -7px;
+  right: -7px;
+}
+
+   input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+    </style>
+ 
+
+</head>
+<body>
+{% block content %}
+{% endblock content %}
+<script src="{% static 'script.js' %"></script>
+
+<div id="custom_header">
+
+<!-- Header Top -->
+<div id="header_top">
+	<div class="container">
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:hello@carterdigital.com.au">hello@Klaus.co.nz</a></p>
+	</div>
+</div>
+
+
+<!-- Header -->
+
+<!-- Hero -->
+<div id="header">
+	
+	<div class="container">
+		
+		<h3 id="hero" style="padding-top=200px">
+			<span class="hero_crop" >
+				<img src="kLogo.jpg"  width="100" >
+			</span>
+		</h3>
+		<div class="lines"></div>
+		<div class="lines2"></div>
+	</div>
+</div>
+<!-- Hero -->
+
+</div>
+
+<!-- Nav -->
+<div id="nav" class="nav">
+	<div class="container">
+		<h3 class="logo">
+			<a href="index.html#!/header/">
+			</a>
+		</h3>
+		<h2>Klaus: Empowering the Private Seller</h2>
+		<ul>
+			<li><a data-rel="#folio" href="index.html#!/folio">Folio</a></li>
+			<li><a data-rel="#about" href="index.html#!/about">Who we are</a></li>
+			<li><a data-rel="#services" href="index.html#!/services">Our Services</a></li>
+			<!-- <li><a href="#">Blog</a></li> -->
+			<!-- <li><a href="#">Careers</a></li> -->
+			<li><a data-rel="#footer" href="index.html#!/footer">Contact Us</a></li>
+		</ul>
+	</div>
+
+</div>
+<div id="nav_space"><br /></div>
+<!-- Nav -->
+
+
+
+	<div id="folio">
+
+	<div class="container">
+		<!-- Section Title -->
+		<h3><span class="marker"></span>Folio</h3>
+
+		<div class="section_heading">
+			<div class="inner">
+				<h1 style="font-family:sans-serif;">We provide you all the services you need to sell your house. <br/>
+Why pay the Real Estate Agent? Do it yourself.</h1>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Folio Single -->
+	<div id="folio_single">
+
+		<div id="temp_project"></div>
+
+		<div class="container" style="z-index:98">
+
+			<div id="folio_nav">
+				<div class="loading_temp"><!-- Load the loading .gif for use on buttons --></div>
+				<a href="index.html#!/folio/" id="folio_close"><span class="outer"></span><span class="inner"></span></a>
+				<a href="javascript:;" id="folio_next"><span class="outer"></span><span class="inner"></span></a>
+				<a href="javascript:;" id="folio_prev"><span class="outer"></span><span class="inner"></span></a>
+			</div>
+
+		</div>
+
+		<div id="ajax_response">
+
+		</div>
+
+	</div>
+
+
+
+<div class="container">
+
+	<ul class="tabs" >
+		<li class="tab-link current" data-tab="tab-1" id="address">Address</li>
+		<li class="tab-link" data-tab="tab-2" id="houseT"> House Type</li>
+		<li class="tab-link" data-tab="tab-3" id="saleT">Sale Type</li>
+		<li class="tab-link" data-tab="tab-4" id="saleD">Sale Duration</li>
+	</ul>
+
+	<div id="tab-1" class="tab-content current">
+		
+
+	 <div id="locationField">
+      <input id="autocomplete" class ="autocomplete" placeholder="Enter your address"
+             onFocus="geolocate()" type="text"></input><br/><br/><br/><br/>
+	
+    </div>
+    <button class="nextButton" style="font-size="50px"">Next</button>
+	</div>
+	<div id="tab-2" class="tab-content".>
+	<div id="innerTabHseType" class="innerTab" onClick="TabTransition();">
+		
+	
+	<nav>
+      <a class="box demo-1"><i class="fa fa-hand-o-right"></i><span>House</span></a><br/>
+      <a class="box demo-1"><i class="fa fa-hand-o-up"></i><span>Townhouse</span></a><br/>
+      <a class="box demo-1"><i class="fa fa-hand-o-left"></i></i> <span>Unit</span></a><br/>
+      <a class="box demo-1"><i class="fa fa-thumbs-o-up"></i> <span>Section</span></a></br>
+       <a class="box demo-1"><i class="fa fa-thumbs-o-up"></i> <span>Lifestyle Dwelling</span></a></br>
+</nav>
+	</div>
+	
+
+	</div>
+	<div id="tab-3" class="tab-content">
+		<div id="innerTabSleType" class="innerTab" onClick="TabTransition();">
+	
+	<nav>
+      <a class="box demo-1"> <i class="fa fa-hand-o-right"></i> <span>Auction<br/></span></a>
+      <a class="box demo-1"> <i class="fa fa-hand-o-up"></i> <span>Tender<br/></span></a>
+      <a class="box demo-1"> <i class="fa fa-hand-o-left"></i>  </i> <span>Price By Negotiation<br/></span></a>
+      <a class="box demo-1">  <i class="fa fa-thumbs-o-up"></i> <span>Enquiries Over</br></span></a>
+       <a class="box demo-1">  <i class="fa fa-thumbs-o-up"></i> <span>Tender Closing</br></span></a>
+       <a class="box demo-1">  <i class="fa fa-thumbs-o-up"></i> <span>Deadline Sale</br></span></a>
+</nav>
+
+</div>
+
+	</div>
+
+	<div id="tab-4" class="tab-content">
+		<div id="innerTabDuration" class="innerTab" onClick="TabTransition();">
+	<nav>
+      <a class="box demo-1"> <i class="fa fa-hand-o-right"></i> <span>21 days<br/></span></a>
+      <a class="box demo-1"> <i class="fa fa-hand-o-up"></i> <span>28 days<br/></span></a>
+      <a class="box demo-1"> <i class="fa fa-hand-o-left"></i>  </i> <span>35 days<br/></span></a>
+      <a class="box demo-1">  <i class="fa fa-thumbs-o-up"></i> <span>42 days</br></span></a>
+       <a class="box demo-1">  <i class="fa fa-thumbs-o-up"></i> <span>56 days</br></span></a>
+</nav>
+	</div>
+	<br/>
+	<br/>
+	
+	<button id="button" class="registerButton"><a href="http://ec2-52-42-18-94.us-west-2.compute.amazonaws.com/Klaus/carterdigital.com.au/dash.html"> Proceed to dashboard</a></button>
+	</div>
+
+</div>
+
+	
+
+
+
+<script>
+      // This example displays an address form, using the autocomplete feature
+      // of the Google Places API to help users fill in the information.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+
+
+      var placeSearch, autocomplete;
+      var componentForm = {
+        street_number: 'short_name',
+        route: 'long_name',
+        locality: 'long_name',
+        administrative_area_level_1: 'short_name',
+        country: 'long_name',
+        postal_code: 'short_name'
+      };
+
+      function initAutocomplete() {
+        // Create the autocomplete object, restricting the search to geographical
+        // location types.
+        autocomplete = new google.maps.places.Autocomplete(
+            /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+            {types: ['geocode']});
+
+        // When the user selects an address from the dropdown, populate the address
+        // fields in the form.
+       // autocomplete.addListener('place_changed', fillInAddress);
+
+      }
+
+
+		
+			
+		     
+
+      
+      
+   
+		
+	
+            //Do Stuff, submit, etc..
+         
+  
+
+
+      // Bias the autocomplete object to the user's geographical location,
+      // as supplied by the browser's 'navigator.geolocation' object.
+      function geolocate() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var geolocation = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+            var circle = new google.maps.Circle({
+              center: geolocation,
+              radius: position.coords.accuracy
+            });
+            autocomplete.setBounds(circle.getBounds());
+          });
+        }
+      }
+
+
+	
+
+    </script>
+
+
+
+<iframe src="http://ec2-52-42-18-94.us-west-2.compute.amazonaws.com:8000" height="80%" width = "100%" frameborder="1"></iframe>
+
+
+<div class="section_mask" id="service_mask">
+<div class="container">
+<div class="section" id="services">
+	
+	<!-- Section Title -->
+	<h3><span class="marker"></span>Our Services</h3>
+	
+	<div class="section_heading">
+		<div class="inner">
+			<h2 style="font-family:sans-serif;">We produce the highest possible user experience for your business and target audience.<br />
+Our creative design and responsive development solutions are second to none.</h2>
+		</div>
+	</div>
+		
+		
+	<!-- Services -->
+	
+	<div class="service ">
+		
+		<div class="circle_holder">
+		<div class="circle">
+			<div class="inner">
+				<div class="icon discover"></div>
+				<h2>Select your home hostess</h2>
+				<p>- Your Vision -</p>
+			</div>
+		</div>
+		</div>
+		<p>It all starts with a discovery session where&nbsp;we will chat about your vision, requirements and expectations for your digital presence.</p>
+
+<ul>
+	<li>User experience (UX) recommendations</li>
+	<li>Technical and Information architecture (IA)</li>
+	<li>Digital marketing strategy</li>
+	<li>Content strategy</li>
+	<li>Customer experience&nbsp;</li>
+	<li>Competitor research and analysis</li>
+</ul>
+		
+	</div>
+	
+	<div class="service ">
+		
+		<div class="circle_holder">
+		<div class="circle">
+			<div class="inner">
+				<div class="icon design"></div>
+				<h2>Choose a Lawyer</h2>
+				<p>- It's Alive -</p>
+			</div>
+		</div>
+		</div>
+		<p>Translating your creative ideas into workable concepts, crafting the user experience, building strong, lasting solutions.</p>
+
+<ul>
+	<li>Creative direction</li>
+	<li>Information architecture</li>
+	<li>Digital strategy</li>
+	<li>Service Design</li>
+	<li>Wireframing &amp; user experience</li>
+	<li>Concept design</li>
+</ul>
+		
+	</div>
+	
+	<div class="service last">
+		
+		<div class="circle_holder">
+		<div class="circle">
+			<div class="inner">
+				<div class="icon deliver"></div>
+				<h2>Sell</h2>
+				<p>- Lift Off -</p>
+			</div>
+		</div>
+		</div>
+		<p>We architect and develop, optimise the experience, test and launch. We then analyse, act on results and offer ongoing support.</p>
+
+<ul>
+	<li>eCommerce development</li>
+	<li>Third party API intergration</li>
+	<li>Search engine optimisation</li>
+	<li>Data &amp; Analytics</li>
+	<li>Social media integration</li>
+	<li>1 on 1 Training</li>
+</ul>
+		
+	</div>
+	
+	
+	<div class="clear"></div>
+	
+</div>
+</div>
+</div>
+
+
+
+<div id="footer">
+	<div class="container">
+
+		<div class="col_contact">
+			<h2>We&#39;d love to hear from you.</h2>
+
+<p>Meeting exciting ux people, starting new projects and concepts is what makes us tick. So go on, get in touch.</p>
+
+<p><strong>Drop us a line</strong> <a href="tel:+61394127000">+61 3 9412 7000</a></p>
+
+<p><strong>Shoot us an email</strong> <a href="mailto:hello@carterdigital.com.au">hello@carterdigital.com.au</a></p>
+
+<p><strong>Grab a coffee</strong>&nbsp;<a href="http://bit.ly/httpstershq" target="_blank">Studio 3, 281 Brunswick Street, Fitzroy, VIC 3065</a></p>
+			<!--  -->
+		</div>
+
+		<div class="col_follow">
+			<h2>Follow Us</h2>
+			<a class="circle_button twitter" href="http://twitter.com/#!/_carterdigital" target="_blank">
+				<span class="outer"></span>
+				<span class="inner">Twitter</span>
+			</a>
+			<a class="circle_button facebook" href="http://www.facebook.com/CarterDigital" target="_blank">
+				<span class="outer"></span>
+				<span class="inner">Facebook</span>
+			</a>
+			<a class="circle_button linkedin" href="http://www.linkedin.com/company/carter-digital" target="_blank">
+				<span class="outer"></span>
+				<span class="inner">LinkedIn</span>
+			</a>
+		</div>
+
+		<div class="col_join">
+			<h2>Join the natter with our fine folk.</h2>
+
+<p>Being a leading ux customer focused agency has its perks. We get to share our experience, latest trends, news and insights with you.</p>
+			<form action="http://login.simplesend.com.au/t/r/s/ptlitj/" method="post" id="subForm">
+				<input type="text" name="cm-ptlitj-ptlitj" id="ptlitj-ptlitj" value="Your email address..." onFocus="if (this.value==this.defaultValue){this.value=''};" onBlur="if (this.value==''){this.value=this.defaultValue};" />
+				<input type="submit" value="Join in." />
+			</form>
+
+			<p class="meta">Copyright &copy; 2016 Klaus Ltd.<br />
+			ABN 26 150 631 020. All rights reserved.<!--<a href="">Terms & Conditions</a> | <a href="">Privacy Policy</a>--></p>
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script>window.jQuery || document.write('<script src="query.js"><\/script>')</script>
+
+
+<script src="js/compiled.js"></script>
+
+
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = 'http://connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6014210340266', {'value':'0.01','currency':'AUD'}]);
+</script>
+
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6014210340266&amp;cd[value]=0.01&amp;cd[currency]=AUD&amp;noscript=1" /></noscript>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyB6oY5RppIQWSmSKgw4sOA21p7S7j9AP-I &libraries=places&callback=initAutocomplete"
+        async defer></script>
+
+</body>
+
+
+</html>

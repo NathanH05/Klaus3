@@ -1,0 +1,376 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="no-js ie9 ie"> <![endif]-->
+<!--[if IE 10]>   <html lang="en" class="no-js ie10 ie"> <![endif]-->
+<html class='no-js' lang='en'>
+
+<!-- Mirrored from carterdigital.com.au/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jun 2016 02:39:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script src='jquery.js'></script>
+	<script type="text/javascript">
+
+
+</script>
+
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+
+
+
+	<meta charset="utf-8" />
+
+	<title>Klaus | Your Home Sell Companion</title>
+	<meta name="keywords" content="ux, digital, cx, user experience, customer experience, service design, strategy, sydney, perth, web, development, eCommerce" />
+    <meta name="description" content="We are Carter, a usability, service design & user experience agency, creating ideas and products that transform and grow your business." />
+
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
+
+	<link rel="apple-touch-icon" href="images/icon-120%402x.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icon-76%401x.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icon-120%402x.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icon-152%402x.png">
+
+	
+    <!--[if IE]>
+	<link rel="stylesheet" href="/css/ie.css" type="text/css" />
+	<![endif]-->
+
+	<!-- <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script> -->
+	<!--<script type="text/javascript" src="/js/jquery.validate.js"></script>-->
+	<!--<script type="text/javascript" src="/js/jquery.color.js"></script>-->
+	<!--<script type="text/javascript" src="js/jquery.animation.easing.js"></script>-->
+	<!--<script type="text/javascript" src="/js/jquery.wiggle.js"></script>-->
+	
+	 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+	
+ 
+
+</head>
+<body>
+
+	<div class="container" style="margin-left:2%;">
+		
+		<h3 id="hero" style="float:left;">
+			<span class="hero_crop" >
+				<a href="{% url 'index' %}"><img src="{% static 'klogo.jpg' %}"  width="100"></img></a>
+			</span>
+		</h3>
+		<div class="lines"></div>
+		<div class="lines2"></div>
+	
+</div>
+
+
+<h3 style="float:right;">
+		
+
+    <p style="font-family:sans-serif;font-size:2em; margin-bottom:0px; float:left;">
+      {% block content %} 
+       
+ {{ propTable.username }}
+
+        {% endblock %}
+</p>
+
+       
+
+
+        
+			<span class="hero_crop">
+				<img src="{% static 'user.png' %}"  width="50" >
+			</span>
+		</h3>
+
+
+<div class="section_heading" style="margin:auto;float:center; padding-top:1%;margin-top:1%;">
+			<div class="inner" style="margin-left:0px; padding-left:0px;">
+				
+		<p style="font-family:sans-serif;font-size:3em; margin-bottom:0px;">Dashboard</p>
+			</div>
+		</div>
+	
+
+
+
+<div class="container">
+
+	<ul class="tabs" style="padding-top:1%; padding-left:25%" >
+		<a href="{% url 'dash' %}"><li data-tab="tab-1">Event Log</li></a>
+		<li id="#property">Property</li>
+		<li id="#services">Services</li>
+		<li id="#marketing">Marketing</li>
+		<li id="#statistics">Statistics</li>
+    <li id="#negotiationStation" class="tab-link current">Negotiation Station</li>
+		
+	</ul>
+</div>
+<div id="eventLog">
+<div class="progressBar">
+<p style="font-size:2em;font-family:sans-serif; margin-left:3%;margin-top:0%;
+margin-bottom:0px;">Listing Progress Bar</p></br>
+
+<ul >
+	</br>
+	<li style="list-style-type: circle; margin-left:8%; float:left;">
+	Lawyer Engaged 
+	</li>
+  <img id = 'chkboxLawyer' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:0%; padding-right:4%;">
+</img>
+</br>
+</br>
+</br>
+
+
+	<li style="list-style-type: circle; margin-left:8%; float:left; ">
+	TradeMe Advert 
+</br>Listing
+	</li><img id = 'chkboxTradeMe' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:2%; padding-right:4%;"></img>
+  </br>
+  </br>
+  </br>
+</br>
+  </br>
+  
+  <li style="list-style-type: circle; margin-left:8%; float:left;">
+  Open Home </br>
+  Host Assigned 
+  </li>
+  <img id = 'chkboxOpenHme' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:2%; padding-right:4%;"></img>
+
+  
+ </br>
+  </br>
+  </br>
+  </br>
+  
+  </br>
+  </br>
+
+  <li style="list-style-type: circle; margin-left:8%; float:left;">
+  Photograghy </br>
+  (Open2View) 
+  </li>
+  <img id = 'chkboxPhtghpy' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:2%; padding-right:4%;"></img>
+  
+  </br>
+  </br>
+   </br>
+  </br>
+</br>
+
+  <li style="list-style-type: circle; margin-left:8%; float:left;">
+  Picket Sale Sign </br>
+   
+  </li>
+  <img id = 'chkboxPcketsalesign' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:2%; padding-right:4%;"></img>
+
+
+</ul>
+
+</div>
+<div class="negotiationStation">
+<p style="font-family:sans-serif;text-align:center;">Negotiation Station</p>
+<ul style="width:100%;height:30%;margin:2.75% 2.75%">
+  
+	<div id="offer1" style="border:2px solid black; width:90%;height:100%;margin:2%; background-color:white;border-radius:10px 15px;">
+    <a href="{% static '4002-sale-and-purchase-of-real-estate-ninth-edition-2012-highlighted-sample.pdf' %}">
+
+      <li style="margin-left:15%; float:left;width:20%;height:85%;">  
+        <a href="{% static '4002-sale-and-purchase-of-real-estate-ninth-edition-2012-highlighted-sample.pdf' %}">
+          <img style="width:70%; height:100%; margin:10%;"src="{% static '4002-sale-and-purchase-of-real-estate-ninth-edition-2012-highlighted-sample.pdf' %}"/>
+        </a>   
+      </li>
+     
+      <li style="float:right;margin-right:20%; margin-top:5%">
+        <b>Offer 1</b>: $1,500,000</br>Buyer: J.A Keatings</br>
+        10/07/2016</br>
+        <i style="font-size:0.4em;line-height:0px;">Assigned to: </br>Conveyance Lawyer: Dean Stuart</i>
+      </li>
+    </a>
+  </div>
+</ul>
+
+<ul style="width:100%;height:30%;margin:2.75% 2.75%">
+  
+  <div id="offer2" style="border:2px solid black; width:90%;height:100%;margin:2%; background-color:white;border-radius:10px 15px;">
+    <a href="{% static '4002-sale-and-purchase-of-real-estate-ninth-edition-2012-highlighted-sample.pdf' %}">
+
+      <li style="margin-left:15%; float:left;width:20%;height:85%;">  
+        <a href="{% static '4002-sale-and-purchase-of-real-estate-ninth-edition-2012-highlighted-sample.pdf' %}">
+          <img style="width:70%; height:100%; margin:10%;"src="{% static '4002-sale-and-purchase-of-real-estate-ninth-edition-2012-highlighted-sample.pdf' %}"/>
+        </a>   
+      </li>
+     
+      <li style="float:right;margin-right:20%; margin-top:5%">
+        <b>Offer 2</b>: $1,500,000</br>Buyer: P.B Curtis</br>
+        10/07/2016</br>
+        <i style="font-size:0.4em;line-height:0px;">Assigned to: </br>You for review!</i>
+      </li>
+    </a>
+  </div>
+</ul>
+
+<ul style="width:100%;height:20%;margin:2.75% 2.75%">
+  
+  <div id="offer1" style="border:2px solid black; width:90%;height:100%;margin:2%; background-color:white;border-radius:10px 15px;">
+    
+
+      <li style="margin-left:15%; margin-top:5%; float:left;width:20%;height:85%;">  
+       Accept an Offer?
+          
+      </li>
+     
+      <li style="float:right;margin-right:20%; margin-top:5%">
+        Upload
+      </li>
+    </a>
+  </div>
+</ul>
+
+<div class="container">
+<div id="calendar"></div>
+</div>
+
+<div id="pic"></div>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="{% static 'availability-calendar.js' %}"></script>
+
+
+
+   
+
+
+<script type="text/javascript">
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+
+<script>window.jQuery || document.write('<script src="{% static 'jquery.js' %}"><\/script>')</script>
+
+
+
+
+
+  <script type="text/javascript">
+  var checkLawyer = "{{ listTask1.lawyerRequired }}";
+  var checkTrademe = "{{ listTask1.tradeMeListing }}";
+  var checkHost = "{{ listTask1.hostAssigned }}";
+  var checkPhotos = "{{ listTask1.photosTaken }}";
+  var checkOpenHome = "{{ listTask1.checkOpenHome }}";
+  var checkYardSign = "{{ listTask1.yardSaleSign }}";
+
+
+
+  $(document).ready(function(){
+    $("#offer1").click(function() {
+    window.open("{% static '4002-sale-and-purchase-of-real-estate-ninth-edition-2012-highlighted-sample.pdf' %}")
+    }
+  );
+
+    $("#offer2").click(function() {
+    window.open("{% static '4002-sale-and-purchase-of-real-estate-ninth-edition-2012-highlighted-sample.pdf' %}")
+    }
+  );
+
+
+
+    if(checkLawyer == 'True'){
+      $('#chkboxLawyer').show();
+    }
+
+      
+    else{
+      $('#chkboxLawyer').hide();
+
+    }
+  })
+
+    $(document).ready(function(){
+    if(checkTrademe == 'True'){
+      $('#chkboxTradeMe').show();
+    }
+      
+    else{
+      $('#chkboxTradeMe').hide();
+
+    }
+    })
+
+    $(document).ready(function(){
+    if(checkPhotos == "True"){
+      $('#chkboxOpenHme').show();
+    }
+      
+    else{
+      $('#chkboxOpenHme').hide();
+
+    }
+    })
+
+    $(document).ready(function(){
+    if(checkPhotos == "True"){
+      $('#chkboxPhtghpy').show();
+    }
+      
+    else{
+      $('#chkboxPhtghpy').hide();
+
+    }
+    })
+
+    $(document).ready(function(){
+    if(checkYardSign == "True"){
+      $('#chkboxPcketsalesign').show();
+    }
+      
+    else{
+      $('#chkboxPcketsalesign').hide();
+
+    }
+    })
+
+    $(document).ready(function(){
+    if(checkHost == "True"){
+      $('#chkboxOpenHme').show();
+    }
+      
+    else{
+      $('#chkboxOpenHme').hide();
+
+    }
+    })
+
+
+
+  </script>
+</div>
+
+
+
+
+</div>
+</body>
+
+
+</html>
