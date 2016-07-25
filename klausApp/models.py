@@ -61,3 +61,6 @@ def nat(self, *args):
 
 def __unicode(self):
 	return self.name
+
+class ProfileImage(models.Model):
+	image = models.FileField(blank=True, null=True)

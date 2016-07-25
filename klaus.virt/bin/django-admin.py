@@ -1,4 +1,4 @@
-#!/Users/nathanhampshire/kdjango/klaus.virt/bin/python3.5
+#!/Users/nathanhampshire/kdjango/klaus.virt/bin/python
 from django.core import management
 
 if __name__ == "__main__":

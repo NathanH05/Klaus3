@@ -45,6 +45,7 @@ class BookResource5(ModelResource):
  		 model = listingTasksTable
    
 
+
 class BookAdmin(ImportExportModelAdmin):
     pass
 

@@ -6,15 +6,20 @@ from django.template import RequestContext
 from klausApp.forms import *
 from django.forms.formsets import formset_factory
 
+from klausApp.models import listingTasksTable
 from klausApp.models import propertyTable
 from klausApp.models import eventLogTable
 from klausApp.models import addonTasksTable
-from klausApp.models import listingTasksTable
+
+
+from klausApp.models import ProfileImage
+
+from django.http import HttpResponseRedirect
+from .forms import SignUpForm
 
 
 
 # Create your views here.
-
 
 def index(request):
     QuestionFormSet = formset_factory(QuestionForm, extra=1)
@@ -77,10 +82,14 @@ def negotiation(request):
     propTable = propertyTable.objects.get(id=1)
     listingTaskTable = listingTasksTable.objects
     
-    return render(request, 'Inventory/negotiation.html',{
-        'propTable': propTable,
-        'listTask1':listingTaskTable.get(id=1),
-        })
+    form = SignUpForm()
+    context = {
+    "form" : form,
+
+    'propTable': propTable,
+    'listTask1':listingTaskTable.get(id=1),
+    }
+    return render(request, 'Inventory/negotiation.html', context)
 
 def interview(request):
     QuestionFormSet = formset_factory(QuestionForm, extra=5)

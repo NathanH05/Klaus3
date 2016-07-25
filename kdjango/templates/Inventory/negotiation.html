@@ -52,7 +52,11 @@
 
 </head>
 <body>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
+
+
+{% block content %} 
 	<div class="container" style="margin-left:2%;">
 		
 		<h3 id="hero" style="float:left;">
@@ -69,12 +73,10 @@
 <h3 style="float:right;">
 		
 
-    <p style="font-family:sans-serif;font-size:2em; margin-bottom:0px; float:left;">
-      {% block content %} 
-       
- {{ propTable.username }}
+    <p style="font-family:sans-serif;font-size:2em; margin-bottom:0px; float:left;">{{ propTable.username }}
+     
 
-        {% endblock %}
+
 </p>
 
        
@@ -116,7 +118,7 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
 
 <ul >
 	</br>
-	<li style="list-style-type: circle; margin-left:8%; float:left;">
+	<li style="list-style-type: none; margin-left:8%; float:left;">
 	Lawyer Engaged 
 	</li>
   <img id = 'chkboxLawyer' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:0%; padding-right:4%;">
@@ -126,7 +128,7 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
 </br>
 
 
-	<li style="list-style-type: circle; margin-left:8%; float:left; ">
+	<li style="list-style-type: none; margin-left:8%; float:left; ">
 	TradeMe Advert 
 </br>Listing
 	</li><img id = 'chkboxTradeMe' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:2%; padding-right:4%;"></img>
@@ -136,7 +138,7 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
 </br>
   </br>
   
-  <li style="list-style-type: circle; margin-left:8%; float:left;">
+  <li style="list-style-type: none; margin-left:8%; float:left;">
   Open Home </br>
   Host Assigned 
   </li>
@@ -151,7 +153,7 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
   </br>
   </br>
 
-  <li style="list-style-type: circle; margin-left:8%; float:left;">
+  <li style="list-style-type: none; margin-left:8%; float:left;">
   Photograghy </br>
   (Open2View) 
   </li>
@@ -163,7 +165,7 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
   </br>
 </br>
 
-  <li style="list-style-type: circle; margin-left:8%; float:left;">
+  <li style="list-style-type: none; margin-left:8%; float:left;">
   Picket Sale Sign </br>
    
   </li>
@@ -177,7 +179,7 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
 <p style="font-family:sans-serif;text-align:center;">Negotiation Station</p>
 <ul style="width:100%;height:30%;margin:2.75% 2.75%">
   
-	<div id="offer1" style="border:2px solid black; width:90%;height:100%;margin:2%; background-color:white;border-radius:10px 15px;">
+  <div id="offer1" style="width:90%;height:80%;margin:2%; background-color:white;border-radius:10px 15px;">
     <a href="{% static '4002-sale-and-purchase-of-real-estate-ninth-edition-2012-highlighted-sample.pdf' %}">
 
       <li style="margin-left:15%; float:left;width:20%;height:85%;">  
@@ -186,10 +188,10 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
         </a>   
       </li>
      
-      <li style="float:right;margin-right:20%; margin-top:5%">
-        <b>Offer 1</b>: $1,500,000</br>Buyer: J.A Keatings</br>
+     <li style="float:right;margin-right:20%; margin-top:5%">
+        <b>Offer 1</b>: $1,500,000</br>Buyer: P.B Curtis</br>
         10/07/2016</br>
-        <i style="font-size:0.4em;line-height:0px;">Assigned to: </br>Conveyance Lawyer: Dean Stuart</i>
+        <i style="font-size:0.4em;line-height:0px;">Assigned to: </i><div style="float:right;font-size:50%;">Lawyer</br>Dean Smith</div>
       </li>
     </a>
   </div>
@@ -197,7 +199,7 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
 
 <ul style="width:100%;height:30%;margin:2.75% 2.75%">
   
-  <div id="offer2" style="border:2px solid black; width:90%;height:100%;margin:2%; background-color:white;border-radius:10px 15px;">
+  <div id="offer2" style="width:90%;height:80%;margin:2%; background-color:white;border-radius:10px 15px;">
     <a href="{% static '4002-sale-and-purchase-of-real-estate-ninth-edition-2012-highlighted-sample.pdf' %}">
 
       <li style="margin-left:15%; float:left;width:20%;height:85%;">  
@@ -206,10 +208,10 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
         </a>   
       </li>
      
-      <li style="float:right;margin-right:20%; margin-top:5%">
-        <b>Offer 2</b>: $1,500,000</br>Buyer: P.B Curtis</br>
-        10/07/2016</br>
-        <i style="font-size:0.4em;line-height:0px;">Assigned to: </br>You for review!</i>
+     <li style="float:right;margin-right:20%; margin-top:5%">
+        <b>Offer 2</b>: $1,350,000</br>Buyer: K.A & B Smith</br>
+        13/07/2016</br>
+        <i style="font-size:0.4em;line-height:0px;">Assigned to: </i><div style="float:right;font-size:50%;">Seller</br>Yvonne85</div>
       </li>
     </a>
   </div>
@@ -217,17 +219,39 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
 
 <ul style="width:100%;height:20%;margin:2.75% 2.75%">
   
-  <div id="offer1" style="border:2px solid black; width:90%;height:100%;margin:2%; background-color:white;border-radius:10px 15px;">
+  <div id="offer3" style=" width:90%;height:100%;margin:2%; margin-top:4%; background-color:;border-radius:10px 15px; font-size:.9em;">
     
 
-      <li style="margin-left:15%; margin-top:5%; float:left;width:20%;height:85%;">  
+      <li style="margin-left:5%; margin-top:10%; float:left;width:20%;height:85%;">  
        Accept an Offer?
           
       </li>
      
-      <li style="float:right;margin-right:20%; margin-top:5%">
-        Upload
+      <li style="float:right;margin-right:5%; margin-top:1%">
+        Step 1: Click to Download &</br> print offer above
+      </br>
+      </br>Step 2: 
+    
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Select Offer...<img src="{% static 'dropdown.png' %}" style="height:15px;width=15px;float:right;"></img></button>
+</br>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#" id="offr1" onclick="hideOffr1()">Offer 1</a>
+    <a href="#" id="offr2" onclick="hideOffr2()">Offer 2</a>
+  </div>
+</div></br>
+      </br>Step 3: Sign, ammend or upload offer:          
+        </br>
+
+        <form method='' action='' enctype="multipart/form-data">
+  
+    {{ form }}
+  
+</form>
+{% endblock %}
       </li>
+
     </a>
   </div>
 </ul>
@@ -237,12 +261,12 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
 </div>
 
 <div id="pic"></div>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 <script src="{% static 'availability-calendar.js' %}"></script>
 
 
 
-   
+
 
 
 <script type="text/javascript">
@@ -261,6 +285,15 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
   })();
 
 </script>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+ 
+       
+ 
 
 
 
@@ -270,7 +303,102 @@ margin-bottom:0px;">Listing Progress Bar</p></br>
 
 
 
+<script type="text/javascript">
 
+var dropdowns = $(".dropdown");
+
+// Onclick on a dropdown, toggle visibility
+dropdowns.find("dt").click(function(){
+  dropdowns.find("dd ul").hide();
+  $(this).next().children().toggle();
+});
+
+// Clic handler for dropdown
+dropdowns.find("dd ul li a").click(function(){
+  var leSpan = $(this).parents(".dropdown").find("dt a span");
+  
+  // Remove selected class
+  $(this).parents(".dropdown").find('dd a').each(function(){
+    $(this).removeClass('selected');
+  });
+  
+  // Update selected value
+  leSpan.html($(this).html());
+  
+  // If back to default, remove selected class else addclass on right element
+  if($(this).hasClass('default')){
+    leSpan.removeClass('selected')
+  }
+  else{
+    leSpan.addClass('selected');
+    $(this).addClass('selected');
+  }
+  
+  // Close dropdown
+  $(this).parents("ul").hide();
+});
+
+// Close all dropdown onclick on another element
+$(document).bind('click', function(e){
+  if (! $(e.target).parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+});
+function hideOffr1() {
+  $("#offer1").css("border","1px solid black")
+  $(".dropbtn").html("Offer 1");
+
+  $("#offer2").css("border","0px")
+}
+
+function hideOffr2() {
+
+  $("#offer2").css("border","1px solid black")
+$(".dropbtn").html("Offer 2");
+  $("#offer1").css("border","0px")
+}
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn') || !event.target.matches('#myDropdown')) {
+    
+   console.log("hey")
+
+    if(!event.target.matches('.dropbtn')){
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+ 
+}
+}
+
+
+$(window).ready(function(){
+
+$("#offer1").css( "display","none" );
+  $("#offer1").fadeIn( 1500 );
+
+
+$("#offer2").css( "display","none" );
+  $("#offer2").fadeIn( 3000 );
+}
+
+
+)
+
+
+
+</script>
 
   <script type="text/javascript">
   var checkLawyer = "{{ listTask1.lawyerRequired }}";

@@ -17,14 +17,13 @@ Including another URLconf
 from django.conf.urls import *
 from django.contrib import admin
 from klausApp import views
+from django.conf import settings
+from django.conf.urls.static import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
     url(r'^dash/', views.dash, name='dash'),
-    url(r'^contact/$', views.contact),
-	url(r'^suggestion/$', views.suggestion),
-	url(r'^interview/$', views.interview), 
     url(r'^negotiation/$', views.negotiation, name='negotiation'), 
 
 ]
