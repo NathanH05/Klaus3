@@ -15,8 +15,8 @@ from klausApp.models import addonTasksTable
 from klausApp.models import ProfileImage
 
 from django.http import HttpResponseRedirect
-from .forms import SignUpForm
-
+from klausApp.forms import SignUpForm
+from klausApp.forms import QuestionForm
 
 
 # Create your views here.
@@ -28,19 +28,21 @@ def index(request):
 
         if(formset.is_valid()):
             message = "Thank you"
+
             for form in formset:
                 print form
                 form.save()
+         
+
+
         else:
             message = "Something went wrong"
-
-        return render_to_response('Inventory/index.html',
-                {'message': message},
-                context_instance=RequestContext(request))
+        return render('Inventory/index.html',
+                {'message' : message})
+        
     else:
-        return render_to_response('Inventory/index.html',
-                {'formset': QuestionFormSet()},
-                context_instance=RequestContext(request))
+        return render('Inventory/index.html',
+                {'formset': QuestionFormSet()})
 
 def suggestion(request):
     if request.method == "POST":

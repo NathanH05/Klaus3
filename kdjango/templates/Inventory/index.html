@@ -170,9 +170,12 @@ Why pay the Real Estate Agent? Do it yourself.</h1>
 {% endif %}
 
 <div>
-	<form action="/" method="post">{% csrf_token %}
+	<form action="/" method="post">
+		{% csrf_token %}
 		{{ formset.management_form }}
+
 		{% for form in formset %}
+
 			{{ form.as_p }}
 		{% endfor %}
 		<input type="submit" value="Submit Questions" />
