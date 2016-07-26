@@ -162,23 +162,21 @@ Why pay the Real Estate Agent? Do it yourself.</h1>
   <div class="modal-content">
     <span class="close">x</span>
     <p style="text-align:center;">Thanks! Please provide your contact details below:
-
+</br>
 {% block content %}
 
-{% if message %}
-{{ message }}
-{% endif %}
+
 
 <div>
-	<form action="/" method="post">
-		{% csrf_token %}
-		{{ formset.management_form }}
+	<form action="/" method="post">{% csrf_token %}
+		
+			{{ formset.management_form }}
+			{% for form in formset %}
+				{{ form.as_p }}
+			{% endfor %}
+			<script type="text/javascript">"{{ html }}"</script>
+		<input type="submit" id ="hi" onclick="regFormAlert()" value="Complete Registration!" />
 
-		{% for form in formset %}
-
-			{{ form.as_p }}
-		{% endfor %}
-		<input type="submit" value="Submit Questions" />
 	</form>
 
 </div>

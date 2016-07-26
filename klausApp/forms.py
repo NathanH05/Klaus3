@@ -12,7 +12,7 @@ class SignUpForm(forms.ModelForm):
 		model = ProfileImage
 		fields = ['image',]
 
-class QuestionForm(forms.ModelForm):
+class QuestionForm(ModelForm):
 	class Meta:
 		model = Registration
 		fields = ['name', 'email','phone']

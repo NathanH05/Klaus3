@@ -12,6 +12,7 @@ from klausApp.models import eventLogTable
 from klausApp.models import addonTasksTable
 
 
+from django.core.context_processors import csrf
 from klausApp.models import ProfileImage
 
 from django.http import HttpResponseRedirect
@@ -22,27 +23,33 @@ from klausApp.forms import QuestionForm
 # Create your views here.
 
 def index(request):
+    
     QuestionFormSet = formset_factory(QuestionForm, extra=1)
+    
+   
+    context = {
+    'form' : QuestionForm(),
+    'html' : '$(function() {alert("hi")})', 
+    }
+
     if request.method == "POST":
         formset = QuestionFormSet(request.POST)
 
         if(formset.is_valid()):
             message = "Thank you"
-
             for form in formset:
-                print form
                 form.save()
-         
-
-
         else:
             message = "Something went wrong"
-        return render('Inventory/index.html',
-                {'message' : message})
+     
+        return render_to_response('Inventory/index.html',
+        context, context_instance=RequestContext(request))
+
+
         
     else:
-        return render('Inventory/index.html',
-                {'formset': QuestionFormSet()})
+        return render_to_response('Inventory/index.html',
+                {'formset' : QuestionFormSet()}, context_instance=RequestContext(request))
 
 def suggestion(request):
     if request.method == "POST":
@@ -52,7 +59,8 @@ def suggestion(request):
     	if (form.is_valid()):
     		print(request.POST['title'])
     		message = 'success'
-    	else:message = 'fail'
+    	else:
+            message = 'fail'
 
         return render_to_response('Inventory/suggestion.html',
               {'message': message},
@@ -95,6 +103,7 @@ def negotiation(request):
 
 def interview(request):
     QuestionFormSet = formset_factory(QuestionForm, extra=5)
+
     if request.method == "POST":
         formset = QuestionFormSet(request.POST)
 

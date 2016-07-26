@@ -1,11 +1,17 @@
 var i = 1;
 
-
+//Tab transition hides the current tab and displays the next tab 
+//by incrementing 'i'
 function TabTransition(id){
-  
+
+//This try catch grabs the name attribute of each menu option and
+// passes out of the function so it is globally re-usable by other 
+//functions. Its passed out with the name id. It tries to
+//do it but if it fails or succeeds, eiher way the 'finally' code
+//still executes   
     try{
     var selectValidHouse = (id);
-console.log(selectValidHouse);
+    console.log(selectValidHouse);
    
     $('#auction').attr('name',selectValidHouse);
     $('#tender').attr('name',selectValidHouse);
@@ -30,63 +36,92 @@ console.log(selectValidHouse);
     }
 
     finally{
+    //increment i by 1
 
     i++;
     console.log(i);
-    //var nob = $("[class^=innerTab]");
-    //var tab_id = nob[i];
-    //console.log(nob)
 
+    //select all the list rows with the tab-link class, which is all the 
+    //headers of the box and assign it to 'nob'
     var nob = $("li[class^=tab-link]");
+    //increment tab_id variable to move through each header grabbing each 
+    //element and dropping the last e.g Address, House Type header etc.
     var tab_id = nob[i];
-    var nobcontent = $(tab_id).attr("data-tab");
+    //grab the data-tab attribute of the header under focus by the user
     var nobcontent = $(tab_id).attr("data-tab");
     
     console.log(tab_id);
     
-  //  console.log(nob[0]);
+  //  grab the inner html of the autocomplete google address input
+  //and sets it to clear. Suspected redundant code.
     var nut=document.getElementById("autocomplete").innerhtml='';
+    console.log(nut)
     document.getElementById("autocomplete").innerhtml='';
-    
 
+    //grabs all list items in an unordered list that has a class 
+    //of current e.g this is all the headings only and removes all 
+    //styling classes from all those headers
     $('ul.tabs li').removeClass('current');
+    //It then grabs the content lists of all tabs. It removes the 
+    //class that displays that list therefore hiding the content
+    //. note only 1 class will have current applied but this selector
+    //grabs all anyway, knowing it will grab the 'current' list 
+    //and remove it in the process
     $('.tab-content').removeClass('current');
 
-
+    //nob[i] is the new current header and so gets given the
+    // 'current' class
     $(nob[i]).addClass('current');
+    //this does the same as the last line so is redundant (suspected)
     $("#"+nobcontent).addClass('current');console.log(nobcontent);
     
+  
+
+    //if the user reaches the end of the list, having selected all
+    //items required then do the following. Note this i
     if (i==4) {
-    
-    
-        var my_text = prompt('Thanks for registering your interest with Klaus. We are still in BETA mode but will get in touch soon! Please enter your email here')
+      //prompt the user to enter in their email into a on screen
+      //pop-up prompt
+      
+      
+      //pop up a second box thank the user for registration
+      alert('Thankyou someone from Klaus will get in touch soon');
 
+      //Grab the address input textbox and clear the address originally
+      // entered by the user
+      var mess = $("[class^=autocomplete]");
+      $("[class^=autocomplete]").blur();    
+      
+      //clear the address entered after 10 milliseconds? Unsure of this 
+      //function
+      setTimeout(function(){
+      $("[class^=autocomplete]").val('')
+      $("[class^=autocomplete]").focus();},10)
 
-        
-        alert('Thankyou someone from Klaus will get in touch soon');
-//$("[class^=autocomplete]".'property value')='';
+      //Reset i to 0
+      i=0;
+      
+      //Grab the first header and display it as the current header tab
+      $(nob[i]).addClass('current');
+      
+      //Grab the first header tab and assign to to tab_id
+      var tab_id = nob[i];
+      
+      //Grab the header tabs data-tab attribute value
+      var nobcontent = $(tab_id).attr("data-tab");
 
-var mess = $("[class^=autocomplete]");
-$("[class^=autocomplete]").blur();    
-setTimeout(function(){
- $("[class^=autocomplete]").val('')
- $("[class^=autocomplete]").focus();},10)
-
-console.log(mess);
-
-  i=0;
-  console.log(i);
-  $(nob[i]).addClass('current');
-  var tab_id = nob[i];
-  var nobcontent = $(tab_id).attr("data-tab");
-    $("#"+nobcontent).addClass('current');console.log(nobcontent);
-
-  };
+      //Select the header tab in focus and display it as the current header
+      $("#"+nobcontent).addClass('current');
+      
+      };
   }
   }
+
+  //Run this function that highlights a selected option when the page loads
 $(document).ready(function (){
-      console.log("{% url 'dash' %}")
-//Changing oolour of user selected option
+
+
+//Changing colour of user selected option
   $("#21days").click(function(){
     $("#28days").css("background", "white");
   })
@@ -148,20 +183,29 @@ $(document).ready(function (){
   })
 
 
+//Run this when the page loads
 $(function(){
+  $("#hi").click(function () {
+  alert("Great, thanks for registering. We'll be in touch shortly")
+})
   
-  // Get the modal
+// Get the modal table which holds the Registration form containing
+//the name, email and phone attributes linked to our registration 
+//table via the django view and form
 var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
+// Select the button element that opens the modal
 var button21 = document.getElementById("21days");
 var button28 = document.getElementById("28days");
 var button35 = document.getElementById("35days");
 var button42 = document.getElementById("42days");
 var button56 = document.getElementById("56days");
 
-// Get the <span> element that closes the modal
+// Get the <span> element that closes the modal, eg the cross to close
+//the popup form
 var span = document.getElementsByClassName("close")[0];
+
+
 
 // When the user clicks on the button, open the modal
 button21.onclick = function() {
@@ -198,14 +242,23 @@ window.onclick = function(event) {
 }})
 })
 
+//When the page loads do the following validation function
 $(document).ready(function(){
-console.log($('#locality').attr('name'));
-  $("#saleD").click(function(){
-      if ($('#locality').attr('name')==null) {
-  alert('Please enter address');
 
-}
-else{
+  console.log($('#locality').attr('name'));
+
+  //Select the SaleDuration header and run the function when clicked
+  $("#saleD").click(function(){
+    
+    //If the address has not been entered display the alert so they 
+    //enter address
+    if ($('#locality').attr('name')==null) {
+    alert('Please enter address');
+
+    }
+
+    //If the user does enter their address perform the following 
+    else{
        console.log($('#21days').attr('name'));
           console.log($('#28days').attr('name'));
           console.log($('#35days').attr('name'));
@@ -213,7 +266,9 @@ else{
           console.log($('#42days').attr('name'));
 
 
-
+        //If the users last selected variable is a house type option
+        //they should not be able to proceed as the last option should be 
+        //a sale type option as sale type was the previous menu
         if(
           $('#21days').attr('name') == '' ||
           $('#21days').attr('name') == 'townhouse' || 
@@ -258,6 +313,9 @@ else{
         {
           alert('Please make a selection');
         }
+        
+         //However if the user's last selected option is anything else or
+        //isn't empty then do the following
         else{
           console.log($('#21days').attr('name'));
           console.log($('#28days').attr('name'));
@@ -265,34 +323,48 @@ else{
           console.log($('#42days').attr('name'));
           console.log($('#42days').attr('name'));
 
+        //Select all the headers
         var nob = $("li[class^=tab-link]");
+        //Select the last header, SaleDuration
         var tab_id = nob[3];
-
+        //Select the Address header
         var Addressarray = $(nob[0]);
+        //Select the House Type header
         var houseTarray = $(nob[1]);
+        //Select the Sale Type header
         var SaleTarray = $(nob[2]);
+        //Select the SaleDuration header
         var SaleDarray = $(nob[3]);
 
 
-
+        //Select the data-tab attribute of the last header a.k.a 
+        //SaleDuration header
         var nobcontent = $(tab_id).attr("data-tab");
 
-
+        //Select all the headers and remove the class 'current' from any
+        //header that has that class
         $('ul.tabs li').removeClass('current');
+        //Select the content of all tabs and remove the class 'current'
+        //from it too
         $('.tab-content').removeClass('current');
 
 
+        //Add the Sale Duration header as the new current header
+        //because at this stage the last selected option was a SaleType
+        //option so its time for the last tab. Suspected redundance though
         SaleDarray.addClass('current');
         $("#"+$(tab_id).attr("data-tab")).addClass('current');
       }
   }
   })
 
+  //Select the Sale Type header and if the name attribute is null do not
+  //allow them to go any further
   $("#saleT").click(function (){
     if ($('#locality').attr('name')==null) {
   alert('Please enter address');
 
-}
+    }
 else{
         console.log($('#auction').attr('name'))
         console.log($('#tender').attr('name'))
@@ -303,6 +375,9 @@ else{
         console.log($('#auction').attr('name'))
         console.log($('#auction').attr('name'))
 
+        //Select the  sale type name attribute and if all of the values
+        //have not been selected a user hasn't made a selection so cannot
+        //proceed
         if($('#auction').attr('name') == '' && 
           $('#tender').attr('name') == '' &&
           $('#negotiation').attr('name') == '' &&
@@ -328,7 +403,9 @@ else{
 
         var nobcontent = $(tab_id).attr("data-tab");
 
-
+        //if a user did select a house type, remove the styling from the 
+        //house type header and the house type content and add the 
+        //sale type header and sale type content as current
         $('ul.tabs li').removeClass('current');
         $('.tab-content').removeClass('current');
 
@@ -340,8 +417,10 @@ else{
       
   })
 
+
   $("#houseT").click(function(){
-        
+     //if house type header tab is clicked but our locality element has not
+     //been given any value it means the user hasn't entered an address   
 if ($('#locality').attr('name')==null) {
   alert('Please enter address');
 
@@ -359,7 +438,9 @@ else{
 
         var nobcontent = $(tab_id).attr("data-tab");
 
-
+      //if a user has selected an address remove the Address tab style
+      //and the address tab content and add the House type header and 
+      //house type content as the new current tab 
         $('ul.tabs li').removeClass('current');
         $('.tab-content').removeClass('current');
 
@@ -387,7 +468,10 @@ else{
 
         var nobcontent = $(tab_id).attr("data-tab");
 
-
+      //if a user tries to click the address tab they should always
+      //be able to view this tab so remove any currently selected
+      //tab header and content and then display the address header
+      //and tab content as the new current tab
         $('ul.tabs li').removeClass('current');
         $('.tab-content').removeClass('current');
 
@@ -409,12 +493,15 @@ $(document).ready(function(){
 
   $('.nextButton').click(function(){
 
-
+//if a user hits the next button on the first tab but no address has been 
+//entered yet then through an error so they do enter their address
 if ($('#locality').attr('name')==null) {
   alert('Please enter address');
 
 }
 else{
+  //a further if check occurs here to make double sure the user has entered
+  //an address before proceeding
      if($('.field').innerhtml == '')
         {
           alert('Please make a selection');
@@ -434,11 +521,11 @@ else{
     
     
     
-
+//if an address has been selected the 
     $('ul.tabs li').removeClass('current');
     $('.tab-content').removeClass('current');
 
-    $(nob[i]).addClass('current');
+    $(nob[1]).addClass('current');
     $("#"+nobcontent).addClass('current');
     //  console.log(tab_id);
   
