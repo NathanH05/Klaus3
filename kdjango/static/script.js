@@ -2,7 +2,7 @@ var i = 1;
 
 //Tab transition hides the current tab and displays the next tab 
 //by incrementing 'i'
-function TabTransition(id){
+function TabTransition0(id){
 
 //This try catch grabs the name attribute of each menu option and
 // passes out of the function so it is globally re-usable by other 
@@ -12,7 +12,9 @@ function TabTransition(id){
     try{
     var selectValidHouse = (id);
     console.log(selectValidHouse);
-   
+
+    //here we set the name attribute of which ever 
+    //option was clicked to the id of that item for later functions..
     $('#auction').attr('name',selectValidHouse);
     $('#tender').attr('name',selectValidHouse);
     $('#negotiation').attr('name',selectValidHouse);
@@ -46,7 +48,257 @@ function TabTransition(id){
     var nob = $("li[class^=tab-link]");
     //increment tab_id variable to move through each header grabbing each 
     //element and dropping the last e.g Address, House Type header etc.
-    var tab_id = nob[i];
+    var tab_id = nob[1];
+    //grab the data-tab attribute of the header under focus by the user
+    var nobcontent = $(tab_id).attr("data-tab");
+    
+    console.log(tab_id);
+    
+  //  grab the inner html of the autocomplete google address input
+  //and sets it to clear. Suspected redundant code.
+    var nut=document.getElementById("autocomplete").innerhtml='';
+    console.log(nut)
+    document.getElementById("autocomplete").innerhtml='';
+
+    //grabs all list items in an unordered list that has a class 
+    //of current e.g this is all the headings only and removes all 
+    //styling classes from all those headers
+    $('ul.tabs li').removeClass('current');
+    //It then grabs the content lists of all tabs. It removes the 
+    //class that displays that list therefore hiding the content
+    //. note only 1 class will have current applied but this selector
+    //grabs all anyway, knowing it will grab the 'current' list 
+    //and remove it in the process
+    $('.tab-content').removeClass('current');
+
+    //nob[i] is the new current header and so gets given the
+    // 'current' class
+    $(nob[1]).addClass('current');
+    //this does the same as the last line so is redundant (suspected)
+    $("#"+nobcontent).addClass('current');console.log(nobcontent);
+    
+  
+
+
+  }
+  }
+
+
+//Tab transition hides the current tab and displays the next tab 
+//by incrementing 'i'
+function TabTransition1(id){
+
+//This try catch grabs the name attribute of each menu option and
+// passes out of the function so it is globally re-usable by other 
+//functions. Its passed out with the name id. It tries to
+//do it but if it fails or succeeds, eiher way the 'finally' code
+//still executes   
+    try{
+    var selectValidHouse = (id);
+    console.log(selectValidHouse);
+
+    //here we set the name attribute of which ever 
+    //option was clicked to the id of that item for later functions..
+    $('#auction').attr('name',selectValidHouse);
+    $('#tender').attr('name',selectValidHouse);
+    $('#negotiation').attr('name',selectValidHouse);
+    $('#enquiriesOver').attr('name',selectValidHouse);
+    $('#tenderClosing').attr('name',selectValidHouse);
+    $('#deadlineSale').attr('name',selectValidHouse);
+    $('#house').attr('name',selectValidHouse);
+    $('#townhouse').attr('name',selectValidHouse);
+    $('#unit').attr('name',selectValidHouse);
+    $('#section').attr('name',selectValidHouse);
+    $('#lifestyleDwelling').attr('name',selectValidHouse);
+    $('#21days').attr('name',selectValidHouse);
+    $('#28days').attr('name',selectValidHouse);
+    $('#35days').attr('name',selectValidHouse);
+    $('#42days').attr('name',selectValidHouse);
+    $('#56days').attr('name',selectValidHouse);
+    $('#autocomplete').attr('name',selectValidHouse);
+
+    var dfd = $('#21days').attr('name')
+    console.log(dfd);
+    }
+
+    finally{
+    //increment i by 1
+
+    i++;
+    console.log(i);
+
+    //select all the list rows with the tab-link class, which is all the 
+    //headers of the box and assign it to 'nob'
+    var nob = $("li[class^=tab-link]");
+    //increment tab_id variable to move through each header grabbing each 
+    //element and dropping the last e.g Address, House Type header etc.
+    var tab_id = nob[2];
+    //grab the data-tab attribute of the header under focus by the user
+    var nobcontent = $(tab_id).attr("data-tab");
+    
+    console.log(tab_id);
+    
+  //  grab the inner html of the autocomplete google address input
+  //and sets it to clear. Suspected redundant code.
+    var nut=document.getElementById("autocomplete").innerhtml='';
+    console.log(nut)
+    document.getElementById("autocomplete").innerhtml='';
+
+    //grabs all list items in an unordered list that has a class 
+    //of current e.g this is all the headings only and removes all 
+    //styling classes from all those headers
+    $('ul.tabs li').removeClass('current');
+    //It then grabs the content lists of all tabs. It removes the 
+    //class that displays that list therefore hiding the content
+    //. note only 1 class will have current applied but this selector
+    //grabs all anyway, knowing it will grab the 'current' list 
+    //and remove it in the process
+    $('.tab-content').removeClass('current');
+
+    //nob[i] is the new current header and so gets given the
+    // 'current' class
+    $(nob[2]).addClass('current');
+    //this does the same as the last line so is redundant (suspected)
+    $("#"+nobcontent).addClass('current');console.log(nobcontent);
+    
+  
+
+    
+  }
+  }
+
+//Tab transition hides the current tab and displays the next tab 
+//by incrementing 'i'
+function TabTransition2(id){
+
+//This try catch grabs the name attribute of each menu option and
+// passes out of the function so it is globally re-usable by other 
+//functions. Its passed out with the name id. It tries to
+//do it but if it fails or succeeds, eiher way the 'finally' code
+//still executes   
+    try{
+    var selectValidHouse = (id);
+    console.log(selectValidHouse);
+
+    //here we set the name attribute of which ever 
+    //option was clicked to the id of that item for later functions..
+    $('#auction').attr('name',selectValidHouse);
+    $('#tender').attr('name',selectValidHouse);
+    $('#negotiation').attr('name',selectValidHouse);
+    $('#enquiriesOver').attr('name',selectValidHouse);
+    $('#tenderClosing').attr('name',selectValidHouse);
+    $('#deadlineSale').attr('name',selectValidHouse);
+    $('#house').attr('name',selectValidHouse);
+    $('#townhouse').attr('name',selectValidHouse);
+    $('#unit').attr('name',selectValidHouse);
+    $('#section').attr('name',selectValidHouse);
+    $('#lifestyleDwelling').attr('name',selectValidHouse);
+    $('#21days').attr('name',selectValidHouse);
+    $('#28days').attr('name',selectValidHouse);
+    $('#35days').attr('name',selectValidHouse);
+    $('#42days').attr('name',selectValidHouse);
+    $('#56days').attr('name',selectValidHouse);
+    $('#autocomplete').attr('name',selectValidHouse);
+
+    var dfd = $('#21days').attr('name')
+    console.log(dfd);
+    }
+
+    finally{
+    //increment i by 1
+
+    i++;
+    console.log(i);
+
+    //select all the list rows with the tab-link class, which is all the 
+    //headers of the box and assign it to 'nob'
+    var nob = $("li[class^=tab-link]");
+    //increment tab_id variable to move through each header grabbing each 
+    //element and dropping the last e.g Address, House Type header etc.
+    var tab_id = nob[3];
+    //grab the data-tab attribute of the header under focus by the user
+    var nobcontent = $(tab_id).attr("data-tab");
+    
+    console.log(tab_id);
+    
+  //  grab the inner html of the autocomplete google address input
+  //and sets it to clear. Suspected redundant code.
+    var nut=document.getElementById("autocomplete").innerhtml='';
+    console.log(nut)
+    document.getElementById("autocomplete").innerhtml='';
+
+    //grabs all list items in an unordered list that has a class 
+    //of current e.g this is all the headings only and removes all 
+    //styling classes from all those headers
+    $('ul.tabs li').removeClass('current');
+    //It then grabs the content lists of all tabs. It removes the 
+    //class that displays that list therefore hiding the content
+    //. note only 1 class will have current applied but this selector
+    //grabs all anyway, knowing it will grab the 'current' list 
+    //and remove it in the process
+    $('.tab-content').removeClass('current');
+
+    //nob[i] is the new current header and so gets given the
+    // 'current' class
+    $(nob[3]).addClass('current');
+    //this does the same as the last line so is redundant (suspected)
+    $("#"+nobcontent).addClass('current');console.log(nobcontent);
+    
+  
+
+
+  }
+  }
+
+  //Tab transition hides the current tab and displays the next tab 
+//by incrementing 'i'
+function TabTransition3(id){
+
+//This try catch grabs the name attribute of each menu option and
+// passes out of the function so it is globally re-usable by other 
+//functions. Its passed out with the name id. It tries to
+//do it but if it fails or succeeds, eiher way the 'finally' code
+//still executes   
+    try{
+    var selectValidHouse = (id);
+    console.log(selectValidHouse);
+
+    //here we set the name attribute of which ever 
+    //option was clicked to the id of that item for later functions..
+    $('#auction').attr('name',selectValidHouse);
+    $('#tender').attr('name',selectValidHouse);
+    $('#negotiation').attr('name',selectValidHouse);
+    $('#enquiriesOver').attr('name',selectValidHouse);
+    $('#tenderClosing').attr('name',selectValidHouse);
+    $('#deadlineSale').attr('name',selectValidHouse);
+    $('#house').attr('name',selectValidHouse);
+    $('#townhouse').attr('name',selectValidHouse);
+    $('#unit').attr('name',selectValidHouse);
+    $('#section').attr('name',selectValidHouse);
+    $('#lifestyleDwelling').attr('name',selectValidHouse);
+    $('#21days').attr('name',selectValidHouse);
+    $('#28days').attr('name',selectValidHouse);
+    $('#35days').attr('name',selectValidHouse);
+    $('#42days').attr('name',selectValidHouse);
+    $('#56days').attr('name',selectValidHouse);
+    $('#autocomplete').attr('name',selectValidHouse);
+
+    var dfd = $('#21days').attr('name')
+    console.log(dfd);
+    }
+
+    finally{
+    //increment i by 1
+
+    i++;
+    console.log(i);
+
+    //select all the list rows with the tab-link class, which is all the 
+    //headers of the box and assign it to 'nob'
+    var nob = $("li[class^=tab-link]");
+    //increment tab_id variable to move through each header grabbing each 
+    //element and dropping the last e.g Address, House Type header etc.
+    var tab_id = nob[4];
     //grab the data-tab attribute of the header under focus by the user
     var nobcontent = $(tab_id).attr("data-tab");
     
@@ -77,109 +329,274 @@ function TabTransition(id){
     
   
 
-    //if the user reaches the end of the list, having selected all
-    //items required then do the following. Note this i
-    if (i==4) {
-      //prompt the user to enter in their email into a on screen
-      //pop-up prompt
-      
-      
-      //pop up a second box thank the user for registration
-      alert('Thankyou someone from Klaus will get in touch soon');
-
-      //Grab the address input textbox and clear the address originally
-      // entered by the user
-      var mess = $("[class^=autocomplete]");
-      $("[class^=autocomplete]").blur();    
-      
-      //clear the address entered after 10 milliseconds? Unsure of this 
-      //function
-      setTimeout(function(){
-      $("[class^=autocomplete]").val('')
-      $("[class^=autocomplete]").focus();},10)
-
-      //Reset i to 0
-      i=0;
-      
-      //Grab the first header and display it as the current header tab
-      $(nob[i]).addClass('current');
-      
-      //Grab the first header tab and assign to to tab_id
-      var tab_id = nob[i];
-      
-      //Grab the header tabs data-tab attribute value
-      var nobcontent = $(tab_id).attr("data-tab");
-
-      //Select the header tab in focus and display it as the current header
-      $("#"+nobcontent).addClass('current');
-      
-      };
+   
   }
   }
+function checkClick(id){
+  var selectdOption = id;
+  console.log(id);
+  
+
+  if($("#house.selectColour").length != 0) {
+   
+  
+    $("a#"+'house'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+
+  if($("#townhouse.selectColour").length != 0) {
+   
+  
+    $("a#"+'townhouse'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+
+  if($("#unit.selectColour").length != 0) {
+   
+  
+    $("a#"+'unit'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+  if($("#section.selectColour").length != 0) {
+   
+  
+    $("a#"+'section'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+  if($("#lifestyleDwelling.selectColour").length != 0) {
+   
+  
+    $("a#"+'lifestyleDwelling'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+
+
+  if($("#auction.selectColour").length != 0) {
+   
+  
+    $("a#"+'auction'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+
+  if($("#tender.selectColour").length != 0) {
+   
+  
+    $("a#"+'tender'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+
+  if($("#negotiation.selectColour").length != 0) {
+   
+  
+    $("a#"+'negotiation'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+
+  if($("#enquiriesOver.selectColour").length != 0) {
+   
+  
+    $("a#"+'enquiriesOver'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+
+  if($("#tenderClosing.selectColour").length != 0) {
+   
+  
+    $("a#"+'tenderClosing'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+
+  if($("#deadlineSale.selectColour").length != 0) {
+   
+  
+    $("a#"+'deadlineSale'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+
+  if($("#21days.selectColour").length != 0) {
+   
+  
+    $("a#"+'21days'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+
+  if($("#28days.selectColour").length != 0) {
+   
+  
+    $("a#"+'28days'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+
+  if($("#35days.selectColour").length != 0) {
+   
+  
+    $("a#"+'35days'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+    if($("#42days.selectColour").length != 0) {
+   
+  
+    $("a#"+'42days'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+    if($("#56days.selectColour").length != 0) {
+   
+  
+    $("a#"+'56days'+"").removeClass("selectColour")
+    $("a#"+id+"").addClass("selectColour");
+
+  }
+  else{
+    $("a#"+id+"").addClass("selectColour");
+  }
+
+
+}
+
 
   //Run this function that highlights a selected option when the page loads
 $(document).ready(function (){
+var i=[];
+i = [1,2]
+console.log(i.length)
+
+
+
+   //$("#house").addClass("selectColour");
+
+  
 
 
 //Changing colour of user selected option
   $("#21days").click(function(){
-    $("#28days").css("background", "white");
+    $("#28days").addClass("selectColour");
   })
 
  $("#28days").click(function(){
-    $("#28days").css("background", "white");
+    $("#28days").addClass("selectColour");
   })
 
   $("#35days").click(function(){
-    $("#35days").css("background", "white");
+    $("#35days").addClass("selectColour");
   })
 
    $("#42days").click(function(){
-    $("#42days").css("background", "white");
+    $("#42days").addClass("selectColour");
   })
 
-    $("#house").click(function(){
-    $("#house").css("background", "white");
-  })
-
-  $("#townhouse").click(function(){
-    $("#townhouse").css("background", "white");
+   $("#56days").click(function(){
+    $("#56days").addClass("selectColour");
   })
 
   $("#unit").click(function(){
-    $("#unit").css("background", "white");
+    $("#unit").addClass("selectColour");
   })
 
   $("#section").click(function(){
-    $("#section").css("background", "white");
+    $("#section").addClass("selectColour");
   })
 
    $("#lifestyleDwelling").click(function(){
-    $("#lifestyleDwelling").css("background", "white");
+    $("#lifestyleDwelling").addClass("selectColour");
   })
 
   $("#auction").click(function(){
-    $("#auction").css("background", "white");
+    $("#auction").addClass("selectColour");
   })
 
   $("#tender").click(function(){
-    $("#tender").css("background", "white");
+    $("#tender").addClass("selectColour");
   })
 
   $("#negotiation").click(function(){
-    $("#negotiation").css("background", "white");
+    $("#negotiation").addClass("selectColour");
   })
 
   $("#enquiriesOver").click(function(){
-    $("#enquiriesOver").css("background", "white");
+    $("#enquiriesOver").addClass("selectColour");
   })
 
   $("#deadlineSale").click(function(){
-    $("#deadlineSale").css("background", "white");
+    $("#deadlineSale").addClass("selectColour");
   })
 
   $("#tenderClosing").click(function(){
-    $("#tenderClosing").css("background", "white");
+    $("#tenderClosing").addClass("selectColour");
   })
 
 
@@ -210,34 +627,48 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
 button21.onclick = function() {
     modal.style.display = "block";
+    var id = '21days'
+    checkClick(id);
 }
+
 
 button28.onclick = function() {
     modal.style.display = "block";
+     var id = '28days'
+    checkClick(id);
 }
 
 button35.onclick = function() {
     modal.style.display = "block";
+     var id = '35days'
+    checkClick(id);
 }
 
 button42.onclick = function() {
     modal.style.display = "block";
+     var id = '42days'
+    checkClick(id);
 }
 
 button56.onclick = function() {
     modal.style.display = "block";
+     var id = '56days'
+    checkClick(id);
+
 }
 
 // When the user clicks on <span> (x), close the modal
 
   span.onclick = function() {
     modal.style.display = "none";
+
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+
     }
 }})
 })
@@ -521,7 +952,9 @@ else{
     
     
     
-//if an address has been selected the 
+//if an address has been selected the current Address tab transitions
+//from the current class to a normal class and the HouseType class is 
+//displayed
     $('ul.tabs li').removeClass('current');
     $('.tab-content').removeClass('current');
 

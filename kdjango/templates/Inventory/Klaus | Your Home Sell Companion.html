@@ -175,7 +175,7 @@ Why pay the Real Estate Agent? Do it yourself.</h1>
 				{{ form.as_p }}
 			{% endfor %}
 			<script type="text/javascript">"{{ html }}"</script>
-		<input type="submit" id ="hi" value="Complete Registration!" />
+		<input type="submit" id ="hi" onclick="regFormAlert()" value="Complete Registration!" />
 
 	</form>
 
@@ -213,11 +213,11 @@ Why pay the Real Estate Agent? Do it yourself.</h1>
 			
 		
 			<nav>
-		      <a class="box demo-1" id="house" onClick="TabTransition1(this.id);checkClick(this.id);"><span>House</span></a><br/>
-		      <a class="box demo-1" id="townhouse" onClick="TabTransition1(this.id);checkClick(this.id);"><span>Townhouse</span></a><br/>
-		      <a class="box demo-1" id="unit" onClick="TabTransition1(this.id);checkClick(this.id)"><span>Unit</span></a><br/>
-		      <a class="box demo-1" id="section" onClick="TabTransition1(this.id);checkClick(this.id)"><span>Section</span></a></br>
-		       <a class="box demo-1" id="lifestyleDwelling" onClick="TabTransition0(this.id);checkClick(this.id)"><span>Lifestyle Dwelling</span></a></br>
+		      <a class="box demo-1" id="house" onClick="TabTransition(this.id);"><span>House</span></a><br/>
+		      <a class="box demo-1" id="townhouse" onClick="TabTransition(this.id);"><span>Townhouse</span></a><br/>
+		      <a class="box demo-1" id="unit" onClick="TabTransition(this.id);"><span>Unit</span></a><br/>
+		      <a class="box demo-1" id="section" onClick="TabTransition(this.id);"><span>Section</span></a></br>
+		       <a class="box demo-1" id="lifestyleDwelling" onClick="TabTransition(this.id);"><span>Lifestyle Dwelling</span></a></br>
 			</nav>
 		</div>
 	</div>
@@ -226,12 +226,12 @@ Why pay the Real Estate Agent? Do it yourself.</h1>
 		<div id="innerTabSleType" class="innerTab">
 		
 			<nav>
-		      <a class="box demo-1" name='' id="auction" onClick="TabTransition2(this.id), checkClick(this.id)"><span>Auction<br/></span></a>
-		      <a class="box demo-1" name='' id="tender" name='' onClick="TabTransition2(this.id); checkClick(this.id)"><span>Tender<br/></span></a>
-		      <a class="box demo-1" name='' id="negotiation" onClick="TabTransition2(this.id); checkClick(this.id)"><span>Price By Negotiation<br/></span></a>
-		      <a class="box demo-1" name='' id="enquiriesOver" onClick="TabTransition2(this.id); checkClick(this.id)"><span>Enquiries Over</br></span></a>
-		       <a class="box demo-1" name='' id="tenderClosing" onClick="TabTransition2(this.id); checkClick(this.id)"><span>Tender Closing</br></span></a>
-		       <a class="box demo-1" name='' id="deadlineSale" onClick="TabTransition2(this.id); checkClick(this.id)"><span>Deadline Sale</span></a></br>
+		      <a class="box demo-1" name='' id="auction" onClick="TabTransition(this.id), nat(this.id);"><span>Auction<br/></span></a>
+		      <a class="box demo-1" name='' id="tender" name='' onClick="TabTransition(this.id);"><span>Tender<br/></span></a>
+		      <a class="box demo-1" name='' id="negotiation" onClick="TabTransition(this.id);"><span>Price By Negotiation<br/></span></a>
+		      <a class="box demo-1" name='' id="enquiriesOver" onClick="TabTransition(this.id);"><span>Enquiries Over</br></span></a>
+		       <a class="box demo-1" name='' id="tenderClosing" onClick="TabTransition(this.id);"><span>Tender Closing</br></span></a>
+		       <a class="box demo-1" name='' id="deadlineSale" onClick="TabTransition(this.id);"><span>Deadline Sale</span></a></br>
 			</nav>
 		</div>
 	</div>
@@ -240,11 +240,11 @@ Why pay the Real Estate Agent? Do it yourself.</h1>
 	<div id="tab-4" class="tab-content">
 		<div id="innerTabDuration" class="innerTab">
 	<nav>
-      <a class="box demo-1" id="21days" name='' onClick="TabTransition2(this.id); checkClick(this.id)"><span>21 days<br/></span></a>
-      <a class="box demo-1" id="28days"  name=''onClick="TabTransition2(this.id); checkClick(this.id)"> <span>28 days<br/></span></a>
-      <a class="box demo-1" id="35days" name='' onClick="TabTransition2(this.class); checkClick(this.id)"> <span>35 days<br/></span></a>
-      <a class="box demo-1" id="42days" name='' onClick="TabTransition2(this.id); checkClick(this.id)"><span>42 days</br></span></a>
-       <a class="box demo-1" id="56days" name='' onClick="TabTransition2(this.id); checkClick(this.id)">  <span>56 days</br></span></a>
+      <a class="box demo-1" id="21days" name='' onClick="TabTransition(this.id);"><span>21 days<br/></span></a>
+      <a class="box demo-1" id="28days"  name=''onClick="TabTransition(this.id);"> <span>28 days<br/></span></a>
+      <a class="box demo-1" id="35days" name='' onClick="TabTransition(this.class);"> <span>35 days<br/></span></a>
+      <a class="box demo-1" id="42days" name='' onClick="TabTransition(this.id);"><span>42 days</br></span></a>
+       <a class="box demo-1" id="56days" name='' onClick="TabTransition(this.id);">  <span>56 days</br></span></a>
 </nav>
 	</div>
 	<br/>
