@@ -1,5 +1,211 @@
 var i = 1;
 
+function selectService() {
+  var property = $("#propertyContent").attr("id")
+  var services = $('#servicesContent').attr("id")
+  var marketing = $('#marketingContent').attr("id")
+  var statistics = $('#statisticsContent').attr("id")
+  var newsfeed = $('#newsfeedContent').attr("id")
+
+  $("div#" + property + "").removeClass("currentTab")
+  $("div#" + marketing + "").removeClass("currentTab")
+  $("div#" + statistics + "").removeClass("currentTab")
+  $("div#" + newsfeed + "").removeClass("currentTab")
+
+ $("div#" + services + "").addClass("currentTab")
+
+
+
+
+ //Tab header transitions, grab the header that is current
+  var gul = $("li[class='current']")
+  console.log(gul);
+  var currentTabID = gul.attr("id")
+  console.log(currentTabID)
+  
+//remove the current class from the current header
+  $("li#" + currentTabID + "").removeClass("current")
+  //Add the current class to the header that the user selected
+  $("li#" + "services" +"").addClass("current")
+}
+
+
+function selectServiceNegotiator() {
+  var property = $("#propertyContent").attr("id")
+  var services = $('#servicesContent').attr("id")
+  var marketing = $('#marketingContent').attr("id")
+  var statistics = $('#statisticsContent').attr("id")
+  var newsfeed = $('#newsfeedContent').attr("id")
+
+  $("div#" + property + "").removeClass("currentTab")
+  $("div#" + marketing + "").removeClass("currentTab")
+  $("div#" + statistics + "").removeClass("currentTab")
+  $("div#" + newsfeed + "").removeClass("currentTab")
+
+ $("div#" + services + "").addClass("currentTab")
+
+
+
+
+ //Tab header transitions, grab the header that is current
+  var gul = $("li[class='current']")
+  console.log(gul);
+  var currentTabID = gul.attr("id")
+  console.log(currentTabID)
+  
+//remove the current class from the current header
+  $("li#" + currentTabID + "").removeClass("current")
+  //Add the current class to the header that the user selected
+  $("li#" + "services" +"").addClass("current")
+}
+
+function selectServiceLawyer() {
+  var property = $("#propertyContent").attr("id")
+  var services = $('#servicesContent').attr("id")
+  var marketing = $('#marketingContent').attr("id")
+  var statistics = $('#statisticsContent').attr("id")
+  var newsfeed = $('#newsfeedContent').attr("id")
+
+  $("div#" + property + "").removeClass("currentTab")
+  $("div#" + services + "").removeClass("currentTab")
+  $("div#" + statistics + "").removeClass("currentTab")
+  $("div#" + newsfeed + "").removeClass("currentTab")
+
+ $("div#" + marketing + "").addClass("currentTab")
+
+
+
+
+ //Tab header transitions, grab the header that is current
+  var gul = $("li[class='current']")
+  console.log(gul);
+  var currentTabID = gul.attr("id")
+  console.log(currentTabID)
+  
+//remove the current class from the current header
+  $("li#" + currentTabID + "").removeClass("current")
+  //Add the current class to the header that the user selected
+  $("li#" + "services" +"").addClass("current")
+}
+
+
+function selectServiceLim() {
+  var property = $("#propertyContent").attr("id")
+  var services = $('#servicesContent').attr("id")
+  var marketing = $('#marketingContent').attr("id")
+  var statistics = $('#statisticsContent').attr("id")
+  var newsfeed = $('#newsfeedContent').attr("id")
+
+  $("div#" + property + "").removeClass("currentTab")
+  $("div#" + services + "").removeClass("currentTab")
+  $("div#" + marketing + "").removeClass("currentTab")
+  $("div#" + newsfeed + "").removeClass("currentTab")
+
+ $("div#" + statistics + "").addClass("currentTab")
+
+
+
+
+ //Tab header transitions, grab the header that is current
+  var gul = $("li[class='current']")
+  console.log(gul);
+  var currentTabID = gul.attr("id")
+  console.log(currentTabID)
+  
+//remove the current class from the current header
+  $("li#" + currentTabID + "").removeClass("current")
+  //Add the current class to the header that the user selected
+  $("li#" + "services" +"").addClass("current")
+}
+
+function displayServices(toBeNewTabID) {
+  
+//Grab all the contents
+  var gul5 = $("div[class='current dashTab']")
+
+  var gul4 = $('.dashTab')
+
+  var property = $("#propertyContent").attr("id")
+  var services = $('#servicesContent').attr("id")
+  var marketing = $('#marketingContent').attr("id")
+  var statistics = $('#statisticsContent').attr("id")
+  var newsfeed = $('#newsfeedContent').attr("id")
+  
+
+
+console.log(property)
+console.log(services)
+console.log(marketing)
+console.log(statistics)
+console.log(newsfeed)
+
+// var gul3 = $("div[class='currentDashTab']")
+ //var currentTabContentID = gul.attr("id")
+
+//Tab header transitions, grab the header that is current
+  var gul = $("li[class='current']")
+  console.log(gul);
+  var currentTabID = gul.attr("id")
+  console.log(currentTabID)
+  console.log(toBeNewTabID)
+//remove the current class from the current header
+  $("li#" + currentTabID + "").removeClass("current")
+  //Add the current class to the header that the user selected
+  $("li#" + toBeNewTabID +"").addClass("current")
+
+
+//Tab content transitions
+if(toBeNewTabID == "services") {
+  $("div#" + property + "").removeClass("currentTab")
+  $("div#" + marketing + "").removeClass("currentTab")
+  $("div#" + statistics + "").removeClass("currentTab")
+  $("div#" + newsfeed + "").removeClass("currentTab")
+
+ $("div#" + services + "").addClass("currentTab")
+console.log('services is true!')
+}
+else if(toBeNewTabID == "property"){
+  $("div#" + services + "").removeClass("currentTab")
+  $("div#" + marketing + "").removeClass("currentTab")
+  $("div#" + statistics + "").removeClass("currentTab")
+  $("div#" + newsfeed + "").removeClass("currentTab")
+
+ $("div#" + property + "").addClass("currentTab")
+console.log('property is true!')
+
+}
+else if(toBeNewTabID == "marketing"){
+  $("div#" + property + "").removeClass("currentTab")
+  $("div#" + services + "").removeClass("currentTab")
+  $("div#" + statistics + "").removeClass("currentTab")
+  $("div#" + newsfeed + "").removeClass("currentTab")
+
+ $("div#" + marketing + "").addClass("currentTab")
+console.log('marketing is true!')
+
+}
+else if(toBeNewTabID == "statistics"){
+  $("div#" + property + "").removeClass("currentTab")
+  $("div#" + marketing + "").removeClass("currentTab")
+  $("div#" + services + "").removeClass("currentTab")
+  $("div#" + newsfeed + "").removeClass("currentTab")
+
+ $("div#" + statistics + "").addClass("currentTab")
+console.log('statistics is true!')
+
+}
+else if(toBeNewTabID == "newsfeed"){
+  $("div#" + property + "").removeClass("currentTab")
+  $("div#" + marketing + "").removeClass("currentTab")
+  $("div#" + statistics + "").removeClass("currentTab")
+  $("div#" + services + "").removeClass("currentTab")
+
+ $("div#" + newsfeed + "").addClass("currentTab")
+console.log('newsfeed is true!')
+
+}
+
+}
 //Tab transition hides the current tab and displays the next tab 
 //by incrementing 'i'
 function TabTransition0(id){
@@ -531,6 +737,7 @@ function checkClick(id){
 
   //Run this function that highlights a selected option when the page loads
 $(document).ready(function (){
+
 var i=[];
 i = [1,2]
 console.log(i.length)
@@ -544,7 +751,7 @@ console.log(i.length)
 
 //Changing colour of user selected option
   $("#21days").click(function(){
-    $("#28days").addClass("selectColour");
+    $("#21days").addClass("selectColour");
   })
 
  $("#28days").click(function(){
@@ -626,9 +833,11 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 button21.onclick = function() {
+       console.log('hi')
     modal.style.display = "block";
     var id = '21days'
     checkClick(id);
+    console.log('hi')
 }
 
 
@@ -671,6 +880,7 @@ window.onclick = function(event) {
 
     }
 }})
+
 })
 
 //When the page loads do the following validation function
@@ -918,6 +1128,8 @@ else{
 
 
 
+
+
 $(document).ready(function(){
 
 
@@ -972,6 +1184,13 @@ else{
 })
 
 
+$(function(){
+
+
+  $('#marquee-vertical2').marquee();  
+  $('#marquee-horizontal').marquee({direction:'horizontal', delay:0, timing:50});  
+
+});
 
 
 

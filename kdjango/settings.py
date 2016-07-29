@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'klaus.serviceteam@gmail.com'
+EMAIL_HOST_PASSWORD = 'klaus123'
+EMAIL_PORT = 586
+EMAIL_USE_TLS = True
 
 # Application definition
 
@@ -51,7 +56,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 
 
 ]

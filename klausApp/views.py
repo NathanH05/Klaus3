@@ -12,7 +12,7 @@ from klausApp.models import eventLogTable
 from klausApp.models import addonTasksTable
 
 
-from django.core.context_processors import csrf
+from django.template.context_processors import csrf
 from klausApp.models import ProfileImage
 
 from django.http import HttpResponseRedirect
@@ -23,6 +23,36 @@ from klausApp.forms import QuestionForm
 # Create your views here.
 
 def index(request):
+    
+    QuestionFormSet = formset_factory(QuestionForm, extra=1)
+    
+   
+    context = {
+    'form' : QuestionForm(),
+    'formset' : QuestionFormSet(),
+    'html' : '$(function() {alert("hi")})', 
+    }
+
+    if request.method == "POST":
+        formset = QuestionFormSet(request.POST)
+
+        if(formset.is_valid()):
+            message = "Thank you"
+            for form in formset:
+                form.save()
+        else:
+            message = "Something went wrong"
+     
+        return render(request,'Inventory/index.html',
+        context)
+
+
+        
+    else:
+        return render(request,'Inventory/index.html',
+                context)
+
+def index3(request):
     
     QuestionFormSet = formset_factory(QuestionForm, extra=1)
     
@@ -42,14 +72,15 @@ def index(request):
         else:
             message = "Something went wrong"
      
-        return render_to_response('Inventory/index.html',
+        return render_to_response('Inventory/index3.html',
         context, context_instance=RequestContext(request))
 
 
         
     else:
-        return render_to_response('Inventory/index.html',
+        return render_to_response('Inventory/index3.html',
                 {'formset' : QuestionFormSet()}, context_instance=RequestContext(request))
+
 
 def suggestion(request):
     if request.method == "POST":

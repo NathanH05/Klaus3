@@ -11,14 +11,37 @@
 <!-- Mirrored from carterdigital.com.au/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jun 2016 02:39:05 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-	<script src='jquery.js'></script>
-	<script type="text/javascript">
+  
 
 
 </script>
 
 <link rel="stylesheet" href="{% static 'styles.css' %}">
 
+<style>
+#propertyContent{
+display: none;
+}
+
+
+
+#servicesContent{
+  display: none;
+}
+
+#marketingContent{
+  display: none;
+}
+
+#statisticsContent{
+  display: none;
+}
+
+#newsfeedContent{
+  display: none;
+}
+
+</style>
 
 
 	<meta charset="utf-8" />
@@ -57,7 +80,7 @@
 		
 		<h3 id="hero" style="float:left;">
 			<span class="hero_crop" >
-				<a href="{% url 'index' %}"><img src="{% static 'klogo.jpg' %}"  width="100"></img></a>
+				<a href="{% url 'index' %}"><img src="{% static 'klauslogo.png' %}"  width="100"></img></a>
 			</span>
 		</h3>
 		<div class="lines"></div>
@@ -95,98 +118,488 @@
 		</div>
 	
 
+<script type="text/javascript">
+  
 
+
+</script>
 
 <div class="container">
 
 	<ul class="tabs" style="padding-top:1%; padding-left:25%" >
-		<li class="tab-link current" data-tab="tab-1">Event Log</li>
-		<li id="#property">Property</li>
-		<li id="#services">Services</li>
-		<li id="#marketing">Marketing</li>
-		<li id="#statistics">Statistics</li>
-    <a href="{% url 'negotiation' %}"><li id="#statistics">Negotiation Station</li></a>
+		
+		<li class="current" data-tab="tab-1" id="property" onClick="displayServices(this.id)">Property</li>
+		<li id="services" name='' onClick="displayServices(this.id);">Services</li>
+		<li id="marketing" name='' onClick="displayServices(this.id)">Marketing</li>
+		<li id="statistics" name=''  onClick="displayServices(this.id)">Statistics</li>
+    <li id="newsfeed" name='' onClick="displayServices(this.id)">Newsfeed</li>
+    <a href="{% url 'negotiation' %}"><li id="negotiation" onClick="displayServices(this.id)">Negotiation Station</li></a>
+
 		
 	</ul>
 </div>
-<div id="eventLog">
-<div class="progressBar">
-<p style="font-size:2em;font-family:sans-serif; margin-left:3%;margin-top:0%;
-margin-bottom:0px;">Listing Progress Bar</p></br>
 
+
+<div id ="propertyContent" class="currentTab" style="float:center">
+  <div style="font-style:sans-serif;color:#333333;font-weight:300; margin-left:20%;margin-top:2%;margin-bottom:0px;">
+  <div style="font:2.5em Proxima, sans-serif;">Property detail and value estimate
+  </div>
+  <div style="font: 1.5em Proxima, sans-serif;padding-top:1%;">
+  Check out our valuation estimate based on your RV and other sales that have taken place in your area.</br>
+  These value estimates are relevant to your property size, floor area and location
+  </div>
+  </div>
+  <div style="background:#B6B6B4;width:20%;margin:0 auto; float:left; 
+    height: 235px;padding-top:0%; margin-top: 2%;margin-left:17%; margin-right:3%;">
+  <p style="float:center;font-size:1.5em; margin-top:10%;margin-left:5%;"><b>Rateable Value</b></br>
+  $1,150,000
+  </br>
+  <b>Estimated Value</b></br>
+  $1,160,000 - $1,620,000
+  </br>
+  </br>
+  <b>Features</b>
+  </br>
+  Bedrooms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bathrooms</br>
+  Floor area &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Land area</p>
+  </div>
+
+  <div style="background:#B6B6B4;;width:20%;margin:0 auto; float:left; 
+    height: 235px; margin-top:2%;margin-right:3%;">
+  <p style="font-size:2em; padding-top:30%; padding-left:40%">Photo</p>
+  </div>
+
+  <div style="background:#B6B6B4;;width:20%;margin:0 auto; float:left; 
+    height: 235px;padding-top:0%; margin-top: 2%">
+  <p style="float:center;padding-left:40%; padding-top:30%; font-size:2em;">Map</p>
+  </div>
+
+  
+  <div style="width:30%;margin-top:15%;margin-left:43%">
+    <p style="padding-left:5%;padding-top:23%;margin-bottom:0px;color:#ffd700; font-size:2em;" onClick="selectServiceNegotiator()">Select Services</p>
+  <img src="{% static 'downArrow.png' %}" style="width:8%;padding-left:18%"></img>
+   </div> 
+</div>
+
+  <div id="servicesContent">
+<div class="progressBar" style=" font: 1em Proxima, sans-serif;">
+    <div class="verticalLine" style="float:left;margin-top:25%; margin-left:10%;height:70%;border-left:2px solid black">
+  </br>
+   </div>
+<p style="font-size:1.5em;font-family:sans-serif; margin-left:3%;margin-top:0%;
+margin-bottom:0px;padding-top:13%;padding-left:15%;width:45%;float:left;">Your Listing</p></br>
+
+ 
+<div id="circle" style="margin:0 auto; width:40px;height:40px;float:right;
+    padding-top:0%; margin-top: 2%;margin-left:5%; margin-right:3%;font-size:1em;"><p style="padding-left:20%; color:black;padding-top:25%;">
+ 14%</p></div>
 <ul >
-	</br>
-	<li style="list-style-type: none; margin-left:8%; float:left;">
-	Lawyer Engaged 
-	</li>
-  <img id = 'chkboxLawyer' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:2%; padding-right:4%;">
-</img>
-</br>
-</br>
-</br>
-
-
-	<li style="list-style-type: none; margin-left:8%; float:left; ">
-	TradeMe Advert 
-</br>Listing
-	</li><img id = 'chkboxTradeMe' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:6%; padding-right:4%;"></img>
-  </br>
-  </br>
-  </br>
-</br>
-  </br>
-  
-  <li style="list-style-type: none; margin-left:8%; float:left;">
-  Open Home </br>
-  Host Assigned 
-  </li>
-  <img id = 'chkboxOpenHme' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:6%; padding-right:4%;"></img>
-
-  
- </br>
-  </br>
-  </br>
-  </br>
-  
-  </br>
   </br>
 
   <li style="list-style-type: none; margin-left:8%; float:left;">
-  Photograghy </br>
-  (Open2View) 
-  </li>
-  <img id = 'chkboxPhtghpy' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:6%; padding-right:4%;"></img>
-  
-  </br>
-  </br>
-   </br>
-  </br>
-</br>
+  <b>LOCATION</br>
+  40 Summer Street, Auckland
+  </b></li>
 
+  <li style="list-style-type: none; margin-left:8%; float:left; padding-top:5%;width:80%">
+  <b>SERVICES</b></li>
   <li style="list-style-type: none; margin-left:8%; float:left;">
-  Picket Sale Sign </br>
-   
-  </li>
-  <img id = 'chkboxPcketsalesign' src="{% static 'checkBox.png' %}" style="width:7%; float:right;padding-top:2%; padding-right:4%;"></img>
+  <b>Negotiator</b></li>
+ 
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;">
+  Open Home Hostess
+  </b></li>
+  <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Listing copy
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+    Buyer contact
+  </b></li>
+  <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Lawyer
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  LIM Report
+  </b></li>
+  <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Builders Report
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Photography
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Video/drone - coming soon!
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Gardener - coming soon!
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Gardener - coming soon!
+  </b></li>
+
+  <li style="list-style-type: none; margin-left:8%; float:left; padding-top:5%;width:80%">
+  <b>MARKETING</b></li>
+
+  <li style="list-style-type: none; margin-left:8%; float:left; padding-top:5%;width:80%">
+  <b>DETAILS</b></li>
+
+  <li style="list-style-type: none; margin-left:8%; float:left; padding-top:5%;width:80%">
+  <b>CONFIRM</b></li>
 
 
 </ul>
+<div style="margin-top:5%;width:80%; float:left;padding-left:17%;font-family:sans-serif;font-size:1.8em;">Package Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$0
 
+</div></div>
+<div style="font-style:sans-serif;color:#333333;font-weight:300; margin-left:28%;margin-top:2%;margin-bottom:0px;">
+  <div style="font:2.5em Proxima, sans-serif;">Do you need a property negotiator
+  </div>
+  <div style="font: 1.5em Proxima, sans-serif;padding-top:1%;">
+  Property negotiators communicate with buyers and help get the best price for your property</br>
+  Arranging the listing, managing open homes and answering buyer's questions is all included
+
+  </div>
+  </div>
+
+  <div id="circle" style=" margin:0 auto; float:left; 
+    padding-top:0%; margin-top: 3%;margin-left:28%; margin-right:3%;font-size:3.5em;"><p style="padding-left:40%; color:white;padding-top:10%;">
+ 1</p>
+ 
+  </div>
+
+  
+
+    <div id="circle" style=" margin:0 auto; float:left; 
+    padding-top:0%; margin-top: 3%;margin-left:5%; margin-right:3%;font-size:3.5em;">
+        <p style="padding-left:40%; color:white;padding-top:10%;">
+        2</p>
+
+    </div>
+
+    <div id="circle" style="margin:0 auto; float:left; 
+    padding-top:0%;  margin-top: 3%;margin-left:5%; margin-right:3%;font-size:3.5em;">
+        <p style="padding-left:40%; color:white;padding-top:10%;">
+         3</p>
+    </div>
+
+      <div style="float:left; width:10%;margin-top: 2%;margin-left:28%; margin-right:3%;">
+      <p style="color:#F0F0F0; font: 1.7em Proxima, sans-serif;margin-bottom:3%;">
+      Klaus is a property sales tool designed for sellers that eliminates the grunt work of selling you house without an agent</p>
+    </div>
+
+    <div style="float:left; width:10%;margin-top: 2%;margin-left:4%; margin-right:3%; margin-bottom:3%;">
+          <p style="color:#F0F0F0; font: 1.7em Proxima, sans-serif;">
+        Klaus is a property sales tool designed for sellers that eliminates the grunt work of selling you house without an agent</p>
+
+    </div>
+
+    
+
+   <div style=";float:left; width:10%;margin-top: 2%;margin-left:4%; margin-right:3%;margin-bottom:3%;">
+      <p style="color:#F0F0F0; font: 1.7em Proxima, sans-serif;">
+        Klaus is a property sales tool designed for sellers that eliminates the grunt work of selling you house without an agent</p>
+  </div>
+
+  
+  <div style="width:30%;margin-top:5%;margin-left:43%;">
+    <p style="padding-left:5%;padding-top:25%;margin-bottom:0px;color:#ffd700; font-size:2em;" onClick="selectServiceLawyer()">I'll do this myself</br>
+  <img src="{% static 'downArrow.png' %}" style="width:8%;padding-left:14%"></img></p>
+   </div> 
 </div>
+
+  <div id="marketingContent">
+
+<div class="progressBar" style=" font: 1em Proxima, sans-serif;">
+    <div class="verticalLine" style="float:left;margin-top:25%; margin-left:10%;height:70%;border-left:2px solid black">
+  </br>
+   </div>
+<p style="font-size:1.5em;font-family:sans-serif; margin-left:3%;margin-top:0%;
+margin-bottom:0px;padding-top:13%;padding-left:15%;width:45%;float:left;">Your Listing</p></br>
+
+ 
+<div id="circle" style="margin:0 auto; width:40px;height:40px;float:right;
+    padding-top:0%; margin-top: 2%;margin-left:5%; margin-right:3%;font-size:1em;"><p style="padding-left:20%; color:black;padding-top:25%;">
+ 14%</p></div>
+<ul >
+  </br>
+
+  <li style="list-style-type: none; margin-left:8%; float:left;">
+  <b>LOCATION</br>
+  40 Summer Street, Auckland
+  </b></li>
+
+  <li style="list-style-type: none; margin-left:8%; float:left; padding-top:5%;width:80%">
+  <b>SERVICES</b></li>
+  <li style="list-style-type: none; margin-left:8%; float:left;">
+  Negotiator</li>
+ 
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;">
+  Open Home Hostess
+  </b></li>
+  <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Listing copy
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+    Buyer contact
+  </b></li>
+  <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  <b>Lawyer
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  LIM Report
+  </b></li>
+  <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Builders Report
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Photography
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Video/drone - coming soon!
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Gardener - coming soon!
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Gardener - coming soon!
+  </b></li>
+
+  <li style="list-style-type: none; margin-left:8%; float:left; padding-top:5%;width:80%">
+  <b>MARKETING</b></li>
+
+  <li style="list-style-type: none; margin-left:8%; float:left; padding-top:5%;width:80%">
+  <b>DETAILS</b></li>
+
+  <li style="list-style-type: none; margin-left:8%; float:left; padding-top:5%;width:80%">
+  <b>CONFIRM</b></li>
+
+
+</ul>
+<div style="margin-top:5%;width:80%; float:left;padding-left:17%;font-family:sans-serif;font-size:1.8em;">Package Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$0
+
+</div></div>
+<div style="font-style:sans-serif;color:#333333;font-weight:300; margin-left:28%;width:47%;margin-top:2%;margin-bottom:0px;">
+   <div style="font:2.5em Proxima, sans-serif;">Do you need a lawyer?
+  </div>
+  <div style="font: 1.5em Proxima, sans-serif;padding-top:1%;">
+  Lawyers help with financing and conditioning of the house when buyers make an offer.</br>
+  Use one of our recommended lawyers or use your own. They are an important first step to ensure the sale goes through without any issues
+
+  </div>
+  </div>
+  <div style="background: #ffffff;width:40%;margin:0 auto; float:center; 
+    height: 30px;spadding-top:0%; margin-top: 2%;margin-left:29%; margin-right:3%;">
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;margin: 0px 0px 1% 0px;width:25%; font-weight:bold;"><b>Name</b>
+      </p>
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;padding-left:20%;margin: 0px 0px 1% 0px;width:30%; font-weight:bold;"><b>Experience</b>
+       </p>
+      <p style="float:right;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;margin: 0px 0px 1% 0px;width:10%; font-weight:bold;"><b>RRP</b></p>
+  </div>
+
+  <div style="background: #f9f9f9;width:40%;margin:0 auto; float:center; 
+    height: 45px;;padding-top:0%; margin-top: 0%;margin-left:29%; margin-right:3%;">
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;ppadding:2% 2% 2% 2%;margin: 0px 0px 1% 0px;width:25%;font-weight:bold; "><b>Ben Dwyer</b>
+      </p>
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;padding-left:20%;margin: 0px 0px 1% 0px;width:30%; "><b>3 years</b>
+       </p>
+      <p style="float:right;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;margin: 0px 0px 1% 0px;width:10%;"><b>$750</b></p>
+  </div>
+
+  <div style="background: #f9f9f9;width:40%;margin:0 auto; float:center; 
+    height: 45px;;padding-top:0%; margin-top: 0%;margin-left:29%; margin-right:3%;">
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;ppadding:2% 2% 2% 2%;margin: 0px 0px 1% 0px;width:25%;font-weight:bold; "><b>Mike Chan</b>
+      </p>
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;padding-left:20%;margin: 0px 0px 1% 0px;width:30%; "><b>5 years</b>
+       </p>
+      <p style="float:right;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;margin: 0px 0px 1% 0px;width:10%;"><b>$899</b></p>
+  </div>
+  <div style="background: #f9f9f9;width:40%;margin:0 auto; float:center; 
+    height: 45px;;padding-top:0%; margin-top: 0%;margin-left:29%; margin-right:3%;">
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;ppadding:2% 2% 2% 2%;margin: 0px 0px 1% 0px;width:25%;font-weight:bold; "><b>Lucy Johnston</b>
+      </p>
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;padding-left:20%;margin: 0px 0px 1% 0px;width:30%; "><b>10 years</b>
+       </p>
+      <p style="float:right;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;margin: 0px 0px 1% 0px;width:10%;"><b>$999</b></p>
+  </div>
+
+
+
+  
+  <div style="width:30%;margin-top:1%;margin-left:42%">
+    <p style="padding-left:5%;padding-top:10%;margin-bottom:0px;color:#ffd700; font-size:2em;" onClick="selectServiceLim()">I'll use my own</p>
+  <img src="{% static 'downArrow.png' %}" style="width:8%;padding-left:18%"></img>
+   </div> 
+</div>
+
+  <div id ="statisticsContent">
+<div class="progressBar" style=" font: 1em Proxima, sans-serif;">
+    <div class="verticalLine" style="float:left;margin-top:25%; margin-left:10%;height:70%;border-left:2px solid black">
+  </br>
+   </div>
+<p style="font-size:1.5em;font-family:sans-serif; margin-left:3%;margin-top:0%;
+margin-bottom:0px;padding-top:13%;padding-left:15%;width:45%;float:left;">Your Listing</p></br>
+
+ 
+<div id="circle" style="margin:0 auto; width:40px;height:40px;float:right;
+    padding-top:0%; margin-top: 2%;margin-left:5%; margin-right:3%;font-size:1em;"><p style="padding-left:20%; color:black;padding-top:25%;">
+ 14%</p></div>
+<ul>
+  </br>
+
+  <li style="list-style-type: none; margin-left:8%; float:left;">
+  <b>LOCATION</br>
+  40 Summer Street, Auckland
+  </b></li>
+
+  <li style="list-style-type: none; margin-left:8%; float:left; padding-top:5%;width:80%">
+  <b>SERVICES</b></li>
+  <li style="list-style-type: none; margin-left:8%; float:left;">
+  Negotiator</li>
+ 
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;">
+  Open Home Hostess
+  </b></li>
+  <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Listing copy
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+    Buyer contact
+  </b></li>
+  <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Lawyer
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  <b>LIM Report
+  </b></li>
+  <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  <b>Builders Report
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Photography
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Video/drone - coming soon!
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Gardener - coming soon!
+  </b></li>
+   <li style="list-style-type: none; margin-left:8%; float:left;width:80%;">
+  Gardener - coming soon!
+  </b></li>
+
+  <li style="list-style-type: none; margin-left:8%; float:left; padding-top:5%;width:80%">
+  <b>MARKETING</b></li>
+
+  <li style="list-style-type: none; margin-left:8%; float:left; padding-top:5%;width:80%">
+  <b>DETAILS</b></li>
+
+  <li style="list-style-type: none; margin-left:8%; float:left; padding-top:5%;width:80%">
+  <b>CONFIRM</b></li>
+
+
+</ul>
+<div style="margin-top:5%;width:80%; float:left;padding-left:17%;font-family:sans-serif;font-size:1.8em;">Package Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$0
+
+</div></div>
+
+<div style="font-style:sans-serif;color:#333333;font-weight:300; margin-left:25%;margin-top:2%;margin-bottom:0px;">
+
+
+ <div style="font:2.5em Proxima, sans-serif;">Do you need a LIM report or Builder's Report?
+  </div>
+  <div style="font: 1.5em Proxima, sans-serif;padding-top:1%;margin-right:35%;">
+  LIM and Builder Reports help with buyer confidence when selling.
+  LIM reports cover things like consents, boundaries and sewer reports. Builder reports look at the quality of property's dwellings and ensure the quality of the home.
+
+  </div>
+
+  </div>
+ <div style="background: #ffffff;width:40%;margin:0 auto; float:center; 
+    height: 30px;spadding-top:0%; margin-top: 2%;margin-left:29%; margin-right:3%;">
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;margin: 0px 0px 1% 0px;width:25%; font-weight:bold;"><b>Name</b>
+      </p>
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;padding-left:20%;margin: 0px 0px 1% 0px;width:30%; font-weight:bold;"><b>Experience</b>
+       </p>
+      <p style="float:right;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;margin: 0px 0px 1% 0px;width:10%; font-weight:bold;"><b>RRP</b></p>
+  </div>
+
+  <div style="background: #f9f9f9;width:40%;margin:0 auto; float:center; 
+    height: 45px;;padding-top:0%; margin-top: 0%;margin-left:29%; margin-right:3%;">
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;ppadding:2% 2% 2% 2%;margin: 0px 0px 1% 0px;width:25%;font-weight:bold; "><b>Ben Dwyer</b>
+      </p>
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;padding-left:20%;margin: 0px 0px 1% 0px;width:30%; "><b>3 years</b>
+       </p>
+      <p style="float:right;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;margin: 0px 0px 1% 0px;width:10%;"><b>$750</b></p>
+  </div>
+
+  <div style="background: #f9f9f9;width:40%;margin:0 auto; float:center; 
+    height: 45px;;padding-top:0%; margin-top: 0%;margin-left:29%; margin-right:3%;">
+      <p class="hov" style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;ppadding:2% 2% 2% 2%;margin: 0px 0px 1% 0px;width:25%;font-weight:bold; "><b>Mike Chan</b>
+      </p>
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;padding-left:20%;margin: 0px 0px 1% 0px;width:30%; "><b>5 years</b>
+       </p>
+      <p style="float:right;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;margin: 0px 0px 1% 0px;width:10%;"><b>$899</b></p>
+  </div>
+  <div style="background: #f9f9f9;width:40%;margin:0 auto; float:center; 
+    height: 45px;;padding-top:0%; margin-top: 0%;margin-left:29%; margin-right:3%;">
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;ppadding:2% 2% 2% 2%;margin: 0px 0px 1% 0px;width:25%;font-weight:bold; "><b>Lucy Johnston</b>
+      </p>
+      <p style="float:left;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;padding-left:20%;margin: 0px 0px 1% 0px;width:30%; "><b>10 years</b>
+       </p>
+      <p style="float:right;font-size:1.5em; margin-top:0%;margin-left:5%;padding-top:0px;margin: 0px 0px 1% 0px;width:10%;"><b>$999</b></p>
+  </div>
+
+  
+  <div style="width:30%;margin-top:1%;margin-left:38%">
+    <p style="padding-left:0%;padding-top:10%;margin-bottom:0px;color:#ffd700; font-size:2em;" onClick="selectServiceLim()">Skip, select photographer</p>
+  <img src="{% static 'downArrow.png' %}" style="width:8%;padding-left:20%"></img>
+   </div> 
+</div>
+
+  <div id ="newsfeedContent">
+<p>This is newsfeed content now</p>
 <div class="calendar">
 <ul >
-	<li style="
-			margin-left:0%; margin-right:0%;">
-		<p style="font-family:sans-serif;text-align:center;">Calendar</p>
+  <li style="
+      margin-left:0%; margin-right:0%;">
+    <p style="font-family:sans-serif;text-align:center;">Calendar</p>
 
-	</li> 
+  </li> 
 
 </ul>
 <div class="container">
 <div id="calendar"></div>
 </div>
+
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="{% static 'availability-calendar.js' %}"></script>
+
+
+</div>
+
+<div class="listEventLog">
+<ul class="logContainer" >
+  
+    <h2 class="LEL" style="color: #222;margin-top:0px; margin-bottom:10px;font-family:sans-serif; font-size:2.2em;">News Feed:</h2>
+  
+    <li style="font-size:1.5em;"><u>{{ eventLog1.Date }}</u>
+       
+ 
+        </br> {{ eventLog1.eventDetail }}</li>
+    <li style="font-size:1.5em;"><u>{{ eventLog2.Date }}</u></br> {{ eventLog2.eventDetail }}</li>
+    <li style="font-size:1.5em;"><u>{{ eventLog3.Date }}</u></br> {{ eventLog3.eventDetail }}</li>
+    <li style="font-size:1.5em;"><u>{{ eventLog4.Date }}</u></br> {{ eventLog4.eventDetail }}</li>
+
+</ul>
+
+</div>
+</div>
+
+
+</div>
 <script>
 var unavailableDates = [
 {start: '2015-08-31', end: '2015-09-05'},
@@ -197,28 +610,6 @@ var unavailableDates = [
 
 $('#calendar').availabilityCalendar(unavailableDates);
 </script>
-
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-
-
-
-
-<script>window.jQuery || document.write('<script src="{% static 'jquery.js' %}"><\/script>')</script>
 
 
 
@@ -304,27 +695,18 @@ $('#calendar').availabilityCalendar(unavailableDates);
 
 
   </script>
-</div>
-
-<div class="listEventLog">
-<ul class="logContainer" >
-	
-		<h2 class="LEL" style="color: #222;margin-top:0px; margin-bottom:10px;font-family:sans-serif; font-size:2.2em;">News Feed:</h2>
-	
-		<li style="font-size:1.5em;"><u>{{ eventLog1.Date }}</u>
-       
- 
-        </br> {{ eventLog1.eventDetail }}</li>
-		<li style="font-size:1.5em;"><u>{{ eventLog2.Date }}</u></br> {{ eventLog2.eventDetail }}</li>
-		<li style="font-size:1.5em;"><u>{{ eventLog3.Date }}</u></br> {{ eventLog3.eventDetail }}</li>
-		<li style="font-size:1.5em;"><u>{{ eventLog4.Date }}</u></br> {{ eventLog4.eventDetail }}</li>
-
-</ul>
-
-</div>
 
 
-</div>
+
+
+<script>window.jQuery || document.write
+('<script src="{% static 'jquery.js' %}"><\/script>')</script>
+  <script src="{% static 'jquery.js' %}"></script>
+  <script src="{% static 'script.js' %}"></script>
+  <script src="{% static 'jquery.min.js' %}"></script>
+  <script src="{% static 'jquery.marquee.js' %}"></script>
+  <script type="text/javascript"></script>
+
 </body>
 
 

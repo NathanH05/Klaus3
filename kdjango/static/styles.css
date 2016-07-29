@@ -12,8 +12,26 @@ q,blockquote{quotes:"" ""}
 
 q:before,q:after,blockquote:before,blockquote:after{content:""}
 
-a img{border:none}body{background:#fbfbfb;color:#333333;min-width:1160px}
+a img{border:none}body{background:#FFFFFF;color:#333333;min-width:1160px}
 
+
+
+
+.current{
+
+display: inline ;
+
+}
+
+.currentTab{
+
+display: inline !important;
+
+}
+
+.dashTab{
+	display: none;
+}
 
 .container{width:1160px;margin:0 auto}
 
@@ -46,7 +64,7 @@ float:center;padding-top:2%; padding-bottom: 2%;}
 
 
 .listEventLog{width:50%;margin:0 auto; float:center; 
-	border: 1px black solid;height: 235px;padding-top:1%; margin-top: 5%;}
+	border: 1px black solid;height: 235px;padding-top:0%; margin-top: 3%;}
 
 
 
@@ -266,6 +284,16 @@ services .icon.deliver{background-position:50% -200px}
 .ie #footer .circle_button.linkedin{background:transparent url(carterdigital.com.au/images/layout/ie-linkedin.png) 50% 50% no-repeat}
 
 .clear{clear:both}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 4px solid #ccc;
+    margin: 01em 0;
+    padding: 0;
+    float:left;
+}
+#circle { width: 100px; height: 100px; background: #E5E4E2; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; }
 
 body{font:62.5% Proxima, sans-serif;color:#333333;font-weight:300}
 

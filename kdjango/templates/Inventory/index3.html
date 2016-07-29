@@ -59,98 +59,20 @@
  
 <script src="{% static 'script.js' %}"></script>
 
-<div id="custom_header">
-
-<!-- Header Top -->
-<div id="header_top">
-	<div class="container">
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:hello@carterdigital.com.au">hello@Klaus.co.nz</a></p>
-	</div>
-</div>
-
-
-<!-- Header -->
-
-<!-- Hero -->
-<div id="header">
-	
-	<div class="container">
-		
-		<h3 id="hero" style="padding-top=200px">
-			<span class="hero_crop" >
-				<img src="{% static 'kLogo.jpg' %}"  width="100" >
-			</span>
-		</h3>
-		<div class="lines"></div>
-		<div class="lines2"></div>
-	</div>
-</div>
 <!-- Hero -->
 
-</div>
 
-<!-- Nav -->
-<div id="nav" class="nav">
-	<div class="container">
-		<h3 class="logo">
-			<a href="index.html#!/header/">
-			</a>
-		</h3>
-		<h2>Klaus: Empowering the Private Seller</h2>
-		<ul>
-			<li><a data-rel="#folio" href="index.html#!/folio">Folio</a></li>
-			<li><a data-rel="#about" href="index.html#!/about">Who we are</a></li>
-			<li><a data-rel="#services" href="index.html#!/services">Our Services</a></li>
-			<!-- <li><a href="#">Blog</a></li> -->
-			<!-- <li><a href="#">Careers</a></li> -->
-			<li><a data-rel="#footer" href="index.html#!/footer">Contact Us</a></li>
-		</ul>
-	</div>
+
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 
 <script>window.jQuery || document.write('<script src="{% static 'jquery.js'%}"><\/script>')</script>
 </div>
-<div id="nav_space"><br /></div>
+
 <!-- Nav -->
 
 
 
-	<div id="folio">
-
-	<div class="container">
-		<!-- Section Title -->
-		<h3><span class="marker"></span>Folio</h3>
-
-		<div class="section_heading">
-			<div class="inner">
-				<h1 style="font-family:sans-serif;">We provide you all the services you need to sell your house. <br/>
-Why pay the Real Estate Agent? Do it yourself.</h1>
-			</div>
-		</div>
-	</div>
-
-
-	<!-- Folio Single -->
-	<div id="folio_single">
-
-		<div id="temp_project"></div>
-
-		<div class="container" style="z-index:98">
-
-			<div id="folio_nav">
-				<div class="loading_temp"><!-- Load the loading .gif for use on buttons --></div>
-				<a href="index.html#!/folio/" id="folio_close"><span class="outer"></span><span class="inner"></span></a>
-				<a href="javascript:;" id="folio_next"><span class="outer"></span><span class="inner"></span></a>
-				<a href="javascript:;" id="folio_prev"><span class="outer"></span><span class="inner"></span></a>
-			</div>
-
-		</div>
-
-		<div id="ajax_response">
-
-		</div>
-
-	</div>
 
   <!-- Trigger/Open The Modal -->
 
@@ -392,154 +314,6 @@ Why pay the Real Estate Agent? Do it yourself.</h1>
 
 
 
-<div class="section_mask" id="service_mask">
-<div class="container">
-<div class="section" id="services">
-	
-	<!-- Section Title -->
-	<h3><span class="marker"></span>Our Services</h3>
-	
-	<div class="section_heading">
-		<div class="inner">
-			<h2 style="font-family:sans-serif;">We produce the highest possible user experience for your business and target audience.<br />
-Our creative design and responsive development solutions are second to none.</h2>
-		</div>
-	</div>
-		
-		
-	<!-- Services -->
-	
-	<div class="service ">
-		
-		<div class="circle_holder">
-		<div class="circle">
-			<div class="inner">
-				<div class="icon discover"></div>
-				<h2>Select your home hostess</h2>
-				<p>- Your Vision -</p>
-			</div>
-		</div>
-		</div>
-		<p>It all starts with a discovery session where&nbsp;we will chat about your vision, requirements and expectations for your digital presence.</p>
-
-<ul>
-	<li>User experience (UX) recommendations</li>
-	<li>Technical and Information architecture (IA)</li>
-	<li>Digital marketing strategy</li>
-	<li>Content strategy</li>
-	<li>Customer experience&nbsp;</li>
-	<li>Competitor research and analysis</li>
-</ul>
-		
-	</div>
-	
-	<div class="service ">
-		
-		<div class="circle_holder">
-		<div class="circle">
-			<div class="inner">
-				<div class="icon design"></div>
-				<h2>Choose a Lawyer</h2>
-				<p>- It's Alive -</p>
-			</div>
-		</div>
-		</div>
-		<p>Translating your creative ideas into workable concepts, crafting the user experience, building strong, lasting solutions.</p>
-
-<ul>
-	<li>Creative direction</li>
-	<li>Information architecture</li>
-	<li>Digital strategy</li>
-	<li>Service Design</li>
-	<li>Wireframing &amp; user experience</li>
-	<li>Concept design</li>
-</ul>
-		
-	</div>
-	
-	<div class="service last">
-		
-		<div class="circle_holder">
-		<div class="circle">
-			<div class="inner">
-				<div class="icon deliver"></div>
-				<h2>Sell</h2>
-				<p>- Lift Off -</p>
-			</div>
-		</div>
-		</div>
-		<p>We architect and develop, optimise the experience, test and launch. We then analyse, act on results and offer ongoing support.</p>
-
-<ul>
-	<li>eCommerce development</li>
-	<li>Third party API intergration</li>
-	<li>Search engine optimisation</li>
-	<li>Data &amp; Analytics</li>
-	<li>Social media integration</li>
-	<li>1 on 1 Training</li>
-</ul>
-		
-	</div>
-	
-	
-	<div class="clear"></div>
-	
-</div>
-</div>
-</div>
-
-
-
-<div id="footer">
-	<div class="container">
-
-		<div class="col_contact">
-			<h2>We&#39;d love to hear from you.</h2>
-
-<p>Meeting exciting ux people, starting new projects and concepts is what makes us tick. So go on, get in touch.</p>
-
-<p><strong>Drop us a line</strong> <a href="tel:+61394127000">+61 3 9412 7000</a></p>
-
-<p><strong>Shoot us an email</strong> <a href="mailto:hello@carterdigital.com.au">hello@carterdigital.com.au</a></p>
-
-<p><strong>Grab a coffee</strong>&nbsp;<a href="http://bit.ly/httpstershq" target="_blank">Studio 3, 281 Brunswick Street, Fitzroy, VIC 3065</a></p>
-			<!--  -->
-		</div>
-
-		<div class="col_follow">
-			<h2>Follow Us</h2>
-			<a class="circle_button twitter" href="http://twitter.com/#!/_carterdigital" target="_blank">
-				<span class="outer"></span>
-				<span class="inner">Twitter</span>
-			</a>
-			<a class="circle_button facebook" href="http://www.facebook.com/CarterDigital" target="_blank">
-				<span class="outer"></span>
-				<span class="inner">Facebook</span>
-			</a>
-			<a class="circle_button linkedin" href="http://www.linkedin.com/company/carter-digital" target="_blank">
-				<span class="outer"></span>
-				<span class="inner">LinkedIn</span>
-			</a>
-		</div>
-
-		<div class="col_join">
-			<h2>Join the natter with our fine folk.</h2>
-
-<p>Being a leading ux customer focused agency has its perks. We get to share our experience, latest trends, news and insights with you.</p>
-			<form action="http://login.simplesend.com.au/t/r/s/ptlitj/" method="post" id="subForm">
-				<input type="text" name="cm-ptlitj-ptlitj" id="ptlitj-ptlitj" value="Your email address..." onFocus="if (this.value==this.defaultValue){this.value=''};" onBlur="if (this.value==''){this.value=this.defaultValue};" />
-				<input type="submit" value="Join in." />
-			</form>
-
-			<p class="meta">Copyright &copy; 2016 Klaus Ltd.<br />
-			ABN 26 150 631 020. All rights reserved.<!--<a href="">Terms & Conditions</a> | <a href="">Privacy Policy</a>--></p>
-		</div>
-
-		<div class="clear"></div>
-
-	</div>
-</div>
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 
 <script>window.jQuery || document.write('<script src="{% static 'jquery.js'%}"><\/script>')</script>
@@ -564,13 +338,13 @@ window._fbq.push(['track', '6014210340266', {'value':'0.01','currency':'AUD'}]);
 
 
 </script>
-
+<script type="text/javascript" src="{% static 'jquery.leanModal.min.js' %}"></script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6014210340266&amp;cd[value]=0.01&amp;cd[currency]=AUD&amp;noscript=1" /></noscript>
 
 
   <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyB6oY5RppIQWSmSKgw4sOA21p7S7j9AP-I &libraries=places&callback=initAutocomplete"
         async defer></script>
-<script type="text/javascript" src="{% static 'jquery.leanModal.min.js' %}"></script>
+
 </body>
 
 
